@@ -1,37 +1,60 @@
+import requests
+from bs4 import BeautifulSoup
+import bs4
 import json
 
-from twitter import Twitter, OAuth, TwitterHTTPError, TwitterStream
+# Scraping the handles of the top 1000 followers
+# Pages are separated by groups of 100 users
 
 
+class TwitterHandle:
+    def __init__(self, handle, name, following, followers, tweets):
+        self.handle = handle
+        self.name = name
+        self.following = following
+        self.followers = followers
+        self.tweets = tweets
 
-# Variables that contains the user credentials to access Twitter API
-ACCESS_TOKEN = 'YOUR ACCESS TOKEN"'
-ACCESS_SECRET = 'YOUR ACCESS TOKEN SECRET'
-CONSUMER_KEY = 'YOUR API KEY'
-CONSUMER_SECRET = 'ENTER YOUR API SECRET'
 
-oauth = OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
+def scrape():
+    users = []
+    for i in range(10):
+        if i == 0:
+            url = "http://twittercounter.com/pages/100/"
+        else:
+            url = "http://twittercounter.com/pages/100/" + str(i*100)
 
-# Initiate the connection to Twitter Streaming API
-twitter_stream = TwitterStream(auth=oauth)
+        print url
+        response = requests.get(url)
+        html = response.text
+        soup = BeautifulSoup(html, "html.parser")
 
-# Get a sample of the public data following through Twitter
-iterator = twitter_stream.statuses.sample()
+        leaderboard = soup.find("ol", {"id" : "leaderboard"})
 
-# Print each tweet in the stream to the screen
-# Here we set it to stop after getting 1000 tweets.
-# You don't have to set it to stop, but can continue running
-# the Twitter API to collect data for days or even longer.
-tweet_count = 1000
-for tweet in iterator:
-    tweet_count -= 1
-    # Twitter Python Tool wraps the data returned by Twitter
-    # as a TwitterDictResponse object.
-    # We convert it back to the JSON format to print/score
-    print json.dumps(tweet)
 
-    # The command below will do pretty printing for JSON data, try it out
-    # print json.dumps(tweet, indent=4)
+        for child in leaderboard.children:
+            if type(child) is bs4.element.Tag:
+                handle = child.find_all("span", {"itemprop" : "alternateName"})
+                name = child.find_all("span", {"itemprop": "name"})
+                # Dirty, but it works
+                try:
+                    followers = child.find_all("div", class_="num-followers active")[0].find("span", class_="num").string
+                    following = child.find_all("div", class_="num-following inactive")[0].find("span", class_="num").string
+                    tweets = child.find_all("div", class_="num-following inactive")[1].find("span", class_="num").string
+                except:
+                    print "Can't match"
 
-    if tweet_count <= 0:
-        break
+
+                if len(handle) > 0:
+                    # save to dictionary
+
+                    users.append(TwitterHandle(handle[0].string, name[0].string, following, followers, tweets).__dict__)
+
+
+    print len(users)
+    with open("../db/top-1000-handles.json", "w") as fp:
+        json.dump(users, fp, indent=4)
+
+scrape()
+
+

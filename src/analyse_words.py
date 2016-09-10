@@ -19,7 +19,7 @@ def query(handle):
         int_scores.append(int(td.string.encode('ascii', 'ignore')))
 
     scores = dict(zip(styles, int_scores))
-    print scores
+    return scores
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
