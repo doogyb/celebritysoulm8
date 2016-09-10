@@ -8,7 +8,7 @@ def query(handle):
     response = requests.get(url)
     html = response.text
 
-    soup = BeautifulSoup(html)
+    soup = BeautifulSoup(html, "html.parser")
     int_scores = []
     styles = ["Upbeat", "Worried", "Angry", "Depressed",
               "Plugged In", "Personable", "Arrogant/Distant",
