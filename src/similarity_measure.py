@@ -6,7 +6,7 @@ def adjust_scale(vector):
 
 
 def normalize(vector):
-    length = sqrt(reduce(lambda x, y: x**2 + y**2, vector))
+    length = sqrt(sum(map(lambda x: x**2, vector)))
     return map(lambda x: x/length, vector)
 
 
@@ -24,3 +24,5 @@ def difference(score1, score2):
         diff += score1[i] * score2[i]
 
     return diff
+
+

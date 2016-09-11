@@ -23,9 +23,10 @@ def assign_scores():
     fp = open("../db/top-1000-handles.json", "w")
     json.dump(db, fp, indent=4)
 
+
 def count_assigned_scores():
     db = json.load(open("../db/top-1000-handles.json", 'r'))
     return len(filter(lambda x: not x['Scores'], db.values()))
 
-assign_scores()
+
 print count_assigned_scores()
