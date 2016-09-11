@@ -29,7 +29,7 @@ def scrape():
         html = response.text
         soup = BeautifulSoup(html, "html.parser")
 
-        leaderboard = soup.find("ol", {"id" : "leaderboard"})
+        leaderboard = soup.find("ol", {"id": "leaderboard"})
 
 
         for child in leaderboard.children:
