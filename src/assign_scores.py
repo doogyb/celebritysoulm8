@@ -11,7 +11,6 @@ def assign_scores():
         print i
         i += 1
 
-
     fp = open("../db/temp.json", 'w')
     json.dump(db, fp, indent=4)
 
