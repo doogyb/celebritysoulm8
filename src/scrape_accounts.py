@@ -17,7 +17,7 @@ class TwitterHandle:
 
 
 def scrape():
-    users = []
+    users = {}
     for i in range(10):
         if i == 0:
             url = "http://twittercounter.com/pages/100/"
@@ -38,17 +38,19 @@ def scrape():
                 name = child.find_all("span", {"itemprop": "name"})
                 # Dirty, but it works
                 try:
-                    followers = child.find_all("div", class_="num-followers active")[0].find("span", class_="num").string
-                    following = child.find_all("div", class_="num-following inactive")[0].find("span", class_="num").string
-                    tweets = child.find_all("div", class_="num-following inactive")[1].find("span", class_="num").string
+                    followers = child.find_all("div", class_="num-followers active")[0].\
+                        find("span", class_="num").string.replace(",", "")
+                    following = child.find_all("div", class_="num-following inactive")[0].\
+                        find("span", class_="num").string.replace(",", "")
+                    tweets = child.find_all("div", class_="num-following inactive")[1].\
+                        find("span", class_="num").string.replace(",", "")
                 except:
                     print "Can't match"
 
-
                 if len(handle) > 0:
                     # save to dictionary
-
-                    users.append(TwitterHandle(handle[0].string, name[0].string, following, followers, tweets).__dict__)
+                    users[handle[0].string] = {"Name": name[0].string, "Following": int(following),
+                                               "Followers": int(followers), "Tweets": int(tweets)}
 
 
     print len(users)
