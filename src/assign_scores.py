@@ -3,7 +3,7 @@ import json
 
 
 def assign_scores():
-    db = json.load(open("../db/top-1000-handles.json", 'r'))
+    db = json.load(open("../db/top-handles.json", 'r'))
     i = 0
     for handle in db.keys():
         if not db[handle]['Scores']:
@@ -20,12 +20,12 @@ def assign_scores():
     fp = open("../db/temp.json", 'w')
     json.dump(db, fp, indent=4)
     fp.close()
-    fp = open("../db/top-1000-handles.json", "w")
+    fp = open("../db/top-handles.json", "w")
     json.dump(db, fp, indent=4)
 
 
 def count_assigned_scores():
-    db = json.load(open("../db/top-1000-handles.json", 'r'))
+    db = json.load(open("../db/top-handles.json", 'r'))
     return len(filter(lambda x: not x['Scores'], db.values()))
 
 

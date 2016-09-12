@@ -5,7 +5,7 @@ import itertools
 
 def global_comparison():
     # Find the highest similarity between the 1000 twitter users
-    db = json.load(open("../db/top-1000-handles.json"))
+    db = json.load(open("../db/top-handles.json"))
     rankings = {}
 
     for handle in db.keys():

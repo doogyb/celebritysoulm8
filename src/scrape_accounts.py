@@ -2,18 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import bs4
 import json
+from twitter import *
 
 # Scraping the handles of the top 1000 followers
 # Pages are separated by groups of 100 users
-
-
-class TwitterHandle:
-    def __init__(self, handle, name, following, followers, tweets):
-        self.handle = handle
-        self.name = name
-        self.following = following
-        self.followers = followers
-        self.tweets = tweets
 
 
 def scrape():
@@ -30,7 +22,6 @@ def scrape():
         soup = BeautifulSoup(html, "html.parser")
 
         leaderboard = soup.find("ol", {"id": "leaderboard"})
-
 
         for child in leaderboard.children:
             if type(child) is bs4.element.Tag:
@@ -52,11 +43,55 @@ def scrape():
                     users[handle[0].string] = {"Name": name[0].string, "Following": int(following),
                                                "Followers": int(followers), "Tweets": int(tweets)}
 
-
     print len(users)
-    with open("../db/top-1000-handles.json", "w") as fp:
+    with open("../db/top-handles.json", "w") as fp:
         json.dump(users, fp, indent=4)
 
-scrape()
+
+def remove_non_english_users(lookup=False):
+    # function which looks up users language
+    # and removes if not english.
+
+    if lookup:
+        consumer_key = open("../keys/consumer-key.txt").read().strip()
+        consumer_secret = open("../keys/consumer-secret.txt").read().strip()
+        access_token = open("../keys/access-token.txt").read().strip()
+        access_token_secret = open("../keys/access-token-secret.txt").read().strip()
+
+        twitter = Twitter(auth=OAuth(access_token, access_token_secret, consumer_key, consumer_secret))
+
+        db = json.load(open("../db/top-handles.json", 'r'))
+
+        # iterate over groups of 99 in order to make less requests, then
+        # search for language and remove if not en
+
+        non_english = []
+
+        for i in range(0, 1000, 99):
+            try:
+                users = twitter.users.lookup(screen_name=",".join([handle[1:] for handle in db.keys()[i:i+99]]))
+            except:
+                print "Messed up with: ", ",".join([handle[1:] for handle in db.keys()[i:i+99]])
+
+            for user in users:
+                if user['lang'] != "en" and user['lang'] != "en-gb":
+                    print "Removing " + user['screen_name'] + " : " + user['lang']
+                    non_english.append("@" + user['screen_name'])
+
+        fp = open("../db/non-english-handles.json", 'w')
+        json.dump(non_english, fp, indent=4)
+
+    non_english = json.load(open("../db/non-english-handles.json"))
+    db = json.load(open("../db/top-handles.json"))
+    for user in non_english:
+        if user not in db:
+            print "Key error with " + user
+        else:
+            db.pop(user)
+
+    fp = open("../db/temp.json", 'w')
+    json.dump(db, fp, indent=4)
 
 
+
+remove_non_english_users()
