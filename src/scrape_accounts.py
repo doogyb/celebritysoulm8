@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import bs4
 import json
 from twitter import *
+import langdetect
 
 # Scraping the handles of the top 1000 followers
 # Pages are separated by groups of 100 users
@@ -93,5 +94,42 @@ def remove_non_english_users(lookup=False):
     json.dump(db, fp, indent=4)
 
 
+def remove_non_english_by_detection(lookup=False):
+    # This method attempts to detect the language
+    # Contained in the users tweets using the langdetect module
+    # and remove non english users from the database
 
-remove_non_english_users()
+    if lookup:
+        consumer_key = open("../keys/consumer-key.txt").read().strip()
+        consumer_secret = open("../keys/consumer-secret.txt").read().strip()
+        access_token = open("../keys/access-token.txt").read().strip()
+        access_token_secret = open("../keys/access-token-secret.txt").read().strip()
+
+        twitter = Twitter(auth=OAuth(access_token, access_token_secret, consumer_key, consumer_secret))
+
+        db = json.load(open("../db/top-handles.json", 'r'))
+
+        non_english = json.load(open('../db/non-english-handles-detection.json'))
+
+        for handle in db.keys():
+
+            # multiple passes needed for twitter rate limits
+            if handle not in non_english:
+
+                # iterate through db of handles, look up tweets and concatenate to form
+                # a large enough data set, roughly 100 tweets
+
+                info = twitter.statuses.user_timeline(screen_name=handle[1:], count=100)
+                text_data = "\n".join([txt['text'] for txt in info])
+                language = langdetect.detect(text_data)
+
+                if language != "en":
+                    print handle + " has " + language
+                    non_english.append(handle)
+
+
+
+
+
+
+

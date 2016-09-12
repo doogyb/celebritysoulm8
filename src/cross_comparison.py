@@ -3,7 +3,7 @@ import json
 import itertools
 
 
-def global_comparison():
+def global_comparison(write_to_file=False):
     # Find the highest similarity between the 1000 twitter users
     db = json.load(open("../db/top-handles.json"))
     rankings = {}
@@ -14,9 +14,12 @@ def global_comparison():
         rankings[handle][other_handle] = similarity_measure.\
             difference(db[handle]["Scores"], db[other_handle]["Scores"])
 
-    fp = open("../db/comparisons.json", 'w')
-    print "writing to file"
-    json.dump(rankings, fp, indent=4)
+    if write_to_file:
+        fp = open("../db/comparisons.json", 'w')
+        print "writing dictionary comparisons to file"
+        json.dump(rankings, fp, indent=4)
+
+    return rankings
 
 
 def find_most_similar():
@@ -45,10 +48,19 @@ def db_as_list():
     return list_form
 
 
-def order_by_similarity():
+def order_by_similarity(write_to_file=False):
 
     list_form = db_as_list()
     list_form.sort(key=lambda x: x[2])
 
-    print "Check"
+    if write_to_file:
+        fp = open("../db/ordered_comparisons.json", 'w')
+        json.dump(list_form, fp, indent=4)
+        print "Writing ordered list to file"
+
     return list_form
+
+
+def recalculate_lists():
+    global_comparison(True)
+    order_by_similarity(True)
