@@ -1,6 +1,7 @@
 from twitter import *
 import pprint
 
+
 def auth_twitter():
 
     consumer_key = open("../keys/consumer-key.txt").read().strip()

@@ -5,7 +5,7 @@ import itertools
 
 def global_comparison(write_to_file=False):
     # Find the highest similarity between the 1000 twitter users
-    db = json.load(open("../db/top-handles.json"))
+    db = json.load(open("../db/english-users.json"))
     rankings = {}
 
     for handle in db.keys():
@@ -64,3 +64,5 @@ def order_by_similarity(write_to_file=False):
 def recalculate_lists():
     global_comparison(True)
     order_by_similarity(True)
+
+recalculate_lists()

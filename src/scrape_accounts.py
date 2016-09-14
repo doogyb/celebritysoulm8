@@ -4,6 +4,7 @@ import bs4
 import json
 from twitter import *
 import langdetect
+import twitter_util
 
 from twitterbot import auth_twitter
 
@@ -103,15 +104,21 @@ def remove_non_english_by_detection():
 
     already_searched = json.load(open("../db/already-searched.json"))
     non_english = json.load(open('../db/non-english-handles.json'))
-    maybe = json.load(open('../db/maybe-english.json'))
 
     twitter = Twitter(auth=auth_twitter())
 
-    requests = 0
+    twitter_requests = twitter.application.rate_limit_status(resources='statuses')
+    twitter_requests = int(twitter_requests['resources']['statuses']['/statuses/user_timeline']['remaining'])
+    print "Requests available: ", twitter_requests,
 
     for handle in db.keys():
 
         # multiple passes needed for twitter rate limits
+
+        if twitter_requests == 0:
+            twitter_util.block_until_reset('statuses/user_timeline')
+            twitter_requests = 180
+
         if handle not in already_searched:
 
             # iterate through db of handles, look up tweets and concatenate to form
@@ -120,78 +127,49 @@ def remove_non_english_by_detection():
             try:
                 info = twitter.statuses.user_timeline(screen_name=handle[1:], count=100, include_rts=False)
                 text_data = "\n".join([txt['text'] for txt in info])
+                twitter_requests -= 1
+
                 try:
                     languages = langdetect.detect_langs(text_data)
                 except:
                     print "Failed to detect language at: " + handle
                     print text_data
 
-                requests += 1
-
-                print handle
                 already_searched.append(handle)
 
-                if has_english(languages):
-                    # has english tweets, but to what extent?
-                    prob = language_probability(languages)
-                    if prob == 0:
-                        print "English: " + handle + " ---> " + str(languages)
-                    elif prob == 1:
-                        print "Maybe: " + handle + " ---> " + str(languages)
-                        maybe.append(handle)
+                # if has_english(languages):
+                #     # has english tweets, but to what extent?
+                #     prob = language_probability(languages)
+                #     if prob == 0:
+                #         print "English: " + handle + " ---> " + str(languages)
+                #     elif prob == 1:
+                #         print "Maybe: " + handle + " ---> " + str(languages)
+                #         maybe.append(handle)
+                #
+                #     else:
+                #         print "Non english: " + handle + " ---> " + str(languages)
+                # else:
+                #     # has no english tweets
+                #     print "Non english: " + handle + " ---> " + str(languages)
+                #     non_english.append(handle)
 
-                    else:
-                        print "Non english: " + handle + " ---> " + str(languages)
-                else:
-                    # has no english tweets
-                    print "Non english: " + handle + " ---> " + str(languages)
+                # much stricter version, which only allows pure english accounts
+
+                if has_other_than_english(languages) or len(languages) > 2:
                     non_english.append(handle)
+                    print "Non english: " + handle + " ---> " + str(languages)
 
             except TwitterHTTPError as twitter_error:
                 print "Failed at: " + handle
                 print twitter_error
                 print "\n\n\n Requests made: " + str(requests)
-                break
+
 
     print "Writing to file..."
     fp = open("../db/already-searched.json", 'w')
     json.dump(already_searched, fp, indent=4)
     fp = open("../db/non-english-handles.json", 'w')
     json.dump(non_english, fp, indent=4)
-    fp = open("../db/maybe-english.json", 'w')
-    json.dump(maybe, fp, indent=4)
-
-
-def move_to_maybe():
-
-    handles = json.load(open("../db/non-english-handles.json"))
-    twitter = Twitter(auth=auth_twitter())
-    new_handles = handles
-    maybe = []
-
-    for handle in handles:
-
-        info = twitter.statuses.user_timeline(screen_name=handle[1:], count=100, include_rts=False)
-        text_data = "\n".join([txt['text'] for txt in info])
-        languages = langdetect.detect_langs(text_data)
-
-        print languages
-        if has_english(languages):
-            prob = language_probability(languages)
-            if prob == 0:
-                print "Handle is probably english: " + handle
-                new_handles.remove(handle)
-            elif prob == 1:
-                print "Maybe: " + handle
-                maybe.append(handle)
-                new_handles.remove(handle)
-            else:
-                print "No: " + handle
-
-        fp = open("../db/maybe-english.json", 'w')
-        json.dump(maybe, fp, indent=4)
-        fp = open("../db/non-english-handles.json", 'w')
-        json.dump(new_handles, fp, indent=4)
 
 
 def has_english(languages, is_lang='en'):
@@ -201,6 +179,10 @@ def has_english(languages, is_lang='en'):
             return True
 
     return False
+
+
+def has_other_than_english(languages):
+    return 'en' not in [lang.lang for lang in languages]
 
 
 def language_probability(languages, is_lang='en'):
@@ -221,14 +203,14 @@ def remove_users():
     non_english_users = json.load(open("../db/non-english-handles.json"))
     all_handles = json.load(open("../db/all-handles.json"))
     for handle in non_english_users:
-        all_handles.pop(handle)
+        if handle in all_handles:
+            all_handles.pop(handle)
 
     fp = open("english-users.json", 'w')
     json.dump(all_handles, fp, indent=4)
 
+remove_non_english_by_detection()
 remove_users()
-
-
 
 
 
