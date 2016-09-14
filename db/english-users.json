@@ -949,25 +949,6 @@
             "Personable": 72
         }
     }, 
-    "@ricky_martin": {
-        "Following": 386, 
-        "Tweets": 6158, 
-        "Followers": 14543322, 
-        "Name": "Ricky Martin", 
-        "Scores": {
-            "Arrogant/Distant": 47, 
-            "Spacy/Valley girl": 54, 
-            "Depressed": 34, 
-            "Angry": 34, 
-            "Plugged In": 42, 
-            "Worried": 48, 
-            "Sensory": 29, 
-            "Analytic": 21, 
-            "Upbeat": 42, 
-            "In-the-moment": 40, 
-            "Personable": 23
-        }
-    }, 
     "@MadhuriDixit": {
         "Following": 26, 
         "Tweets": 5521, 
@@ -1424,6 +1405,25 @@
             "Personable": 49
         }
     }, 
+    "@cesc4official": {
+        "Following": 171, 
+        "Tweets": 3246, 
+        "Followers": 8671081, 
+        "Name": "Cesc F\u00e0bregas Soler", 
+        "Scores": {
+            "Arrogant/Distant": 30, 
+            "Spacy/Valley girl": 61, 
+            "Depressed": 46, 
+            "Angry": 30, 
+            "Plugged In": 47, 
+            "Worried": 24, 
+            "Sensory": 25, 
+            "Analytic": 30, 
+            "Upbeat": 61, 
+            "In-the-moment": 44, 
+            "Personable": 43
+        }
+    }, 
     "@TripleH": {
         "Following": 26, 
         "Tweets": 3055, 
@@ -1462,25 +1462,6 @@
             "Personable": 33
         }
     }, 
-    "@marcoluque": {
-        "Following": 374, 
-        "Tweets": 23036, 
-        "Followers": 8634137, 
-        "Name": "snap luquemarco", 
-        "Scores": {
-            "Sensory": 13, 
-            "Plugged In": 33, 
-            "Depressed": 46, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 58, 
-            "Worried": 53, 
-            "Arrogant/Distant": 35, 
-            "Analytic": 14, 
-            "In-the-moment": 42, 
-            "Upbeat": 12, 
-            "Personable": 13
-        }
-    }, 
     "@deepikapadukone": {
         "Following": 72, 
         "Tweets": 2943, 
@@ -1517,6 +1498,25 @@
             "Upbeat": 77, 
             "In-the-moment": 52, 
             "Personable": 61
+        }
+    }, 
+    "@ToniKroos": {
+        "Following": 92, 
+        "Tweets": 1516, 
+        "Followers": 4137112, 
+        "Name": "Toni Kroos", 
+        "Scores": {
+            "Sensory": 23, 
+            "Plugged In": 58, 
+            "Depressed": 20, 
+            "Angry": 26, 
+            "Spacy/Valley girl": 66, 
+            "Worried": 20, 
+            "Arrogant/Distant": 42, 
+            "Analytic": 38, 
+            "In-the-moment": 42, 
+            "Upbeat": 89, 
+            "Personable": 50
         }
     }, 
     "@NHL": {
@@ -1861,25 +1861,6 @@
             "Personable": 28
         }
     }, 
-    "@NoelSchajris": {
-        "Following": 1457, 
-        "Tweets": 54765, 
-        "Followers": 4608829, 
-        "Name": "Noel Schajris", 
-        "Scores": {
-            "Sensory": 15, 
-            "Plugged In": 47, 
-            "Depressed": 42, 
-            "Angry": 23, 
-            "Spacy/Valley girl": 44, 
-            "Worried": 27, 
-            "Arrogant/Distant": 45, 
-            "Analytic": 11, 
-            "In-the-moment": 41, 
-            "Upbeat": 17, 
-            "Personable": 10
-        }
-    }, 
     "@WhiteHouse": {
         "Following": 224, 
         "Tweets": 26436, 
@@ -1975,6 +1956,25 @@
             "Personable": 20
         }
     }, 
+    "@neymarjr": {
+        "Following": 734, 
+        "Tweets": 40680, 
+        "Followers": 24809704, 
+        "Name": "Neymar Jr", 
+        "Scores": {
+            "Arrogant/Distant": 34, 
+            "Spacy/Valley girl": 61, 
+            "Depressed": 45, 
+            "Angry": 18, 
+            "Plugged In": 27, 
+            "Worried": 22, 
+            "Sensory": 23, 
+            "Analytic": 12, 
+            "Upbeat": 16, 
+            "In-the-moment": 38, 
+            "Personable": 8
+        }
+    }, 
     "@twittermedia": {
         "Following": 199, 
         "Tweets": 1656, 
@@ -2011,6 +2011,25 @@
             "Upbeat": 46, 
             "In-the-moment": 35, 
             "Personable": 32
+        }
+    }, 
+    "@afgansyah_reza": {
+        "Following": 601, 
+        "Tweets": 11010, 
+        "Followers": 9300605, 
+        "Name": "Afgan", 
+        "Scores": {
+            "Arrogant/Distant": 58, 
+            "Spacy/Valley girl": 61, 
+            "Depressed": 30, 
+            "Angry": 29, 
+            "Plugged In": 51, 
+            "Worried": 32, 
+            "Sensory": 44, 
+            "Analytic": 29, 
+            "Upbeat": 50, 
+            "In-the-moment": 41, 
+            "Personable": 30
         }
     }, 
     "@carlyraejepsen": {
@@ -2298,6 +2317,25 @@
             "Personable": 15
         }
     }, 
+    "@Guaje7Villa": {
+        "Following": 538, 
+        "Tweets": 1521, 
+        "Followers": 7659416, 
+        "Name": "David Villa", 
+        "Scores": {
+            "Arrogant/Distant": 34, 
+            "Spacy/Valley girl": 53, 
+            "Depressed": 31, 
+            "Angry": 23, 
+            "Plugged In": 52, 
+            "Worried": 21, 
+            "Sensory": 16, 
+            "Analytic": 17, 
+            "Upbeat": 50, 
+            "In-the-moment": 31, 
+            "Personable": 21
+        }
+    }, 
     "@SimonCowell": {
         "Following": 2785, 
         "Tweets": 1826, 
@@ -2315,6 +2353,25 @@
             "Upbeat": 93, 
             "In-the-moment": 61, 
             "Personable": 74
+        }
+    }, 
+    "@psy_oppa": {
+        "Following": 684, 
+        "Tweets": 4395, 
+        "Followers": 4256977, 
+        "Name": "PSY", 
+        "Scores": {
+            "Sensory": 14, 
+            "Plugged In": 21, 
+            "Depressed": 46, 
+            "Angry": 18, 
+            "Spacy/Valley girl": 22, 
+            "Worried": 21, 
+            "Arrogant/Distant": 8, 
+            "Analytic": 9, 
+            "In-the-moment": 43, 
+            "Upbeat": 12, 
+            "Personable": 7
         }
     }, 
     "@AppStore": {
@@ -2754,6 +2811,25 @@
             "Personable": 47
         }
     }, 
+    "@HaifaWehbe": {
+        "Following": 27, 
+        "Tweets": 16255, 
+        "Followers": 5184334, 
+        "Name": "Haifa Wehbe", 
+        "Scores": {
+            "Arrogant/Distant": 12, 
+            "Spacy/Valley girl": 18, 
+            "Depressed": 48, 
+            "Angry": 18, 
+            "Plugged In": 22, 
+            "Worried": 20, 
+            "Sensory": 15, 
+            "Analytic": 9, 
+            "Upbeat": 12, 
+            "In-the-moment": 43, 
+            "Personable": 7
+        }
+    }, 
     "@DwyaneWade": {
         "Following": 593, 
         "Tweets": 8177, 
@@ -3001,6 +3077,25 @@
             "Personable": 30
         }
     }, 
+    "@IBGDRGN": {
+        "Following": 114, 
+        "Tweets": 3781, 
+        "Followers": 6615147, 
+        "Name": "G-DRAGON", 
+        "Scores": {
+            "Sensory": 12, 
+            "Plugged In": 36, 
+            "Depressed": 41, 
+            "Angry": 17, 
+            "Spacy/Valley girl": 24, 
+            "Worried": 27, 
+            "Arrogant/Distant": 31, 
+            "Analytic": 17, 
+            "In-the-moment": 40, 
+            "Upbeat": 29, 
+            "Personable": 12
+        }
+    }, 
     "@Starbucks": {
         "Following": 99522, 
         "Tweets": 77050, 
@@ -3037,6 +3132,25 @@
             "In-the-moment": 32, 
             "Upbeat": 42, 
             "Personable": 25
+        }
+    }, 
+    "@XabiAlonso": {
+        "Following": 490, 
+        "Tweets": 513, 
+        "Followers": 10649629, 
+        "Name": "Xabi Alonso", 
+        "Scores": {
+            "Sensory": 18, 
+            "Plugged In": 30, 
+            "Depressed": 26, 
+            "Angry": 35, 
+            "Spacy/Valley girl": 43, 
+            "Worried": 20, 
+            "Arrogant/Distant": 43, 
+            "Analytic": 26, 
+            "In-the-moment": 33, 
+            "Upbeat": 49, 
+            "Personable": 22
         }
     }, 
     "@KellyOsbourne": {
@@ -3134,25 +3248,6 @@
             "Personable": 31
         }
     }, 
-    "@folha": {
-        "Following": 190034, 
-        "Tweets": 249130, 
-        "Followers": 5052450, 
-        "Name": "Folha de S.Paulo", 
-        "Scores": {
-            "Sensory": 13, 
-            "Plugged In": 13, 
-            "Depressed": 41, 
-            "Angry": 20, 
-            "Spacy/Valley girl": 55, 
-            "Worried": 43, 
-            "Arrogant/Distant": 44, 
-            "Analytic": 15, 
-            "In-the-moment": 40, 
-            "Upbeat": 15, 
-            "Personable": 8
-        }
-    }, 
     "@nicolerichie": {
         "Following": 13161, 
         "Tweets": 4254, 
@@ -3172,23 +3267,23 @@
             "Personable": 51
         }
     }, 
-    "@LAURAGII": {
-        "Following": 1127, 
-        "Tweets": 82405, 
-        "Followers": 4401521, 
-        "Name": "Laura G", 
+    "@najwakaram": {
+        "Following": 101, 
+        "Tweets": 13066, 
+        "Followers": 5505328, 
+        "Name": "Najwa Karam", 
         "Scores": {
-            "Sensory": 13, 
-            "Plugged In": 26, 
-            "Depressed": 45, 
-            "Angry": 26, 
-            "Spacy/Valley girl": 62, 
-            "Worried": 41, 
-            "Arrogant/Distant": 36, 
-            "Analytic": 11, 
-            "In-the-moment": 35, 
-            "Upbeat": 12, 
-            "Personable": 12
+            "Sensory": 14, 
+            "Plugged In": 20, 
+            "Depressed": 48, 
+            "Angry": 17, 
+            "Spacy/Valley girl": 25, 
+            "Worried": 20, 
+            "Arrogant/Distant": 10, 
+            "Analytic": 8, 
+            "In-the-moment": 43, 
+            "Upbeat": 9, 
+            "Personable": 6
         }
     }, 
     "@realpreityzinta": {
@@ -3210,6 +3305,25 @@
             "Personable": 59
         }
     }, 
+    "@gadiiing": {
+        "Following": 748, 
+        "Tweets": 54358, 
+        "Followers": 4522398, 
+        "Name": "Gading Marten", 
+        "Scores": {
+            "Sensory": 15, 
+            "Plugged In": 40, 
+            "Depressed": 32, 
+            "Angry": 19, 
+            "Spacy/Valley girl": 58, 
+            "Worried": 26, 
+            "Arrogant/Distant": 53, 
+            "Analytic": 12, 
+            "In-the-moment": 44, 
+            "Upbeat": 29, 
+            "Personable": 17
+        }
+    }, 
     "@UNICEF": {
         "Following": 24998, 
         "Tweets": 29061, 
@@ -3227,25 +3341,6 @@
             "In-the-moment": 30, 
             "Upbeat": 52, 
             "Personable": 28
-        }
-    }, 
-    "@HitamPutihT7": {
-        "Following": 499, 
-        "Tweets": 13064, 
-        "Followers": 5427350, 
-        "Name": "Hitam Putih Trans|7", 
-        "Scores": {
-            "Sensory": 21, 
-            "Plugged In": 36, 
-            "Depressed": 49, 
-            "Angry": 30, 
-            "Spacy/Valley girl": 44, 
-            "Worried": 48, 
-            "Arrogant/Distant": 53, 
-            "Analytic": 9, 
-            "In-the-moment": 42, 
-            "Upbeat": 11, 
-            "Personable": 12
         }
     }, 
     "@CodySimpson": {
@@ -3305,25 +3400,6 @@
             "Personable": 100
         }
     }, 
-    "@belindapop": {
-        "Following": 1705, 
-        "Tweets": 6673, 
-        "Followers": 4167014, 
-        "Name": "Belinda", 
-        "Scores": {
-            "Sensory": 14, 
-            "Plugged In": 33, 
-            "Depressed": 33, 
-            "Angry": 26, 
-            "Spacy/Valley girl": 57, 
-            "Worried": 24, 
-            "Arrogant/Distant": 35, 
-            "Analytic": 14, 
-            "In-the-moment": 45, 
-            "Upbeat": 31, 
-            "Personable": 15
-        }
-    }, 
     "@acmilan": {
         "Following": 39, 
         "Tweets": 38461, 
@@ -3341,25 +3417,6 @@
             "In-the-moment": 27, 
             "Upbeat": 45, 
             "Personable": 22
-        }
-    }, 
-    "@jesseyjoy": {
-        "Following": 1010, 
-        "Tweets": 29280, 
-        "Followers": 4968955, 
-        "Name": "Jesse & Joy Oficial", 
-        "Scores": {
-            "Sensory": 22, 
-            "Plugged In": 62, 
-            "Depressed": 42, 
-            "Angry": 28, 
-            "Spacy/Valley girl": 57, 
-            "Worried": 30, 
-            "Arrogant/Distant": 51, 
-            "Analytic": 13, 
-            "In-the-moment": 41, 
-            "Upbeat": 55, 
-            "Personable": 17
         }
     }, 
     "@SamsungMobile": {
@@ -3571,25 +3628,6 @@
             "Personable": 12
         }
     }, 
-    "@ElNacionalWeb": {
-        "Following": 362832, 
-        "Tweets": 3889818, 
-        "Followers": 3872917, 
-        "Name": "El Nacional", 
-        "Scores": {
-            "Sensory": 19, 
-            "Plugged In": 17, 
-            "Depressed": 45, 
-            "Angry": 18, 
-            "Spacy/Valley girl": 65, 
-            "Worried": 28, 
-            "Arrogant/Distant": 32, 
-            "Analytic": 8, 
-            "In-the-moment": 41, 
-            "Upbeat": 11, 
-            "Personable": 8
-        }
-    }, 
     "@Cristiano": {
         "Following": 95, 
         "Tweets": 2667, 
@@ -3685,25 +3723,6 @@
             "Personable": 37
         }
     }, 
-    "@PEPATAHKU": {
-        "Following": 0, 
-        "Tweets": 175205, 
-        "Followers": 4362767, 
-        "Name": "PEPATAHKU", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 20, 
-            "Depressed": 51, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 37, 
-            "Worried": 24, 
-            "Arrogant/Distant": 68, 
-            "Analytic": 8, 
-            "In-the-moment": 44, 
-            "Upbeat": 9, 
-            "Personable": 7
-        }
-    }, 
     "@rihanna": {
         "Following": 1133, 
         "Tweets": 9868, 
@@ -3778,6 +3797,25 @@
             "In-the-moment": 42, 
             "Upbeat": 57, 
             "Personable": 38
+        }
+    }, 
+    "@_Pedro17_": {
+        "Following": 173, 
+        "Tweets": 490, 
+        "Followers": 3973482, 
+        "Name": "Pedro Rodr\u00edguez", 
+        "Scores": {
+            "Sensory": 11, 
+            "Plugged In": 40, 
+            "Depressed": 35, 
+            "Angry": 29, 
+            "Spacy/Valley girl": 51, 
+            "Worried": 20, 
+            "Arrogant/Distant": 43, 
+            "Analytic": 12, 
+            "In-the-moment": 29, 
+            "Upbeat": 60, 
+            "Personable": 17
         }
     }, 
     "@iamjamiefoxx": {
@@ -4236,25 +4274,6 @@
             "Personable": 56
         }
     }, 
-    "@wisinyyandel": {
-        "Following": 69, 
-        "Tweets": 9554, 
-        "Followers": 4583000, 
-        "Name": "Wisin Y Yandel", 
-        "Scores": {
-            "Sensory": 21, 
-            "Plugged In": 66, 
-            "Depressed": 35, 
-            "Angry": 20, 
-            "Spacy/Valley girl": 34, 
-            "Worried": 24, 
-            "Arrogant/Distant": 58, 
-            "Analytic": 12, 
-            "In-the-moment": 37, 
-            "Upbeat": 21, 
-            "Personable": 12
-        }
-    }, 
     "@BradPaisley": {
         "Following": 96, 
         "Tweets": 6575, 
@@ -4310,25 +4329,6 @@
             "In-the-moment": 43, 
             "Upbeat": 52, 
             "Personable": 49
-        }
-    }, 
-    "@sectorkekz": {
-        "Following": 479, 
-        "Tweets": 13104, 
-        "Followers": 4886084, 
-        "Name": "Angelica Panganiban", 
-        "Scores": {
-            "Sensory": 28, 
-            "Plugged In": 70, 
-            "Depressed": 77, 
-            "Angry": 58, 
-            "Spacy/Valley girl": 64, 
-            "Worried": 89, 
-            "Arrogant/Distant": 54, 
-            "Analytic": 48, 
-            "In-the-moment": 67, 
-            "Upbeat": 14, 
-            "Personable": 61
         }
     }, 
     "@andersoncooper": {
@@ -4464,6 +4464,25 @@
             "Personable": 72
         }
     }, 
+    "@KAKA": {
+        "Following": 463, 
+        "Tweets": 4595, 
+        "Followers": 25784341, 
+        "Name": "Kaka", 
+        "Scores": {
+            "Sensory": 23, 
+            "Plugged In": 52, 
+            "Depressed": 25, 
+            "Angry": 29, 
+            "Spacy/Valley girl": 50, 
+            "Worried": 28, 
+            "Arrogant/Distant": 44, 
+            "Analytic": 18, 
+            "In-the-moment": 38, 
+            "Upbeat": 78, 
+            "Personable": 23
+        }
+    }, 
     "@jason_mraz": {
         "Following": 36, 
         "Tweets": 3324, 
@@ -4519,6 +4538,25 @@
             "In-the-moment": 43, 
             "Upbeat": 43, 
             "Personable": 23
+        }
+    }, 
+    "@Benzema": {
+        "Following": 45, 
+        "Tweets": 729, 
+        "Followers": 4596545, 
+        "Name": "Karim Benzema", 
+        "Scores": {
+            "Sensory": 10, 
+            "Plugged In": 55, 
+            "Depressed": 43, 
+            "Angry": 25, 
+            "Spacy/Valley girl": 79, 
+            "Worried": 22, 
+            "Arrogant/Distant": 48, 
+            "Analytic": 14, 
+            "In-the-moment": 43, 
+            "Upbeat": 24, 
+            "Personable": 12
         }
     }, 
     "@106andpark": {
@@ -4595,6 +4633,25 @@
             "In-the-moment": 38, 
             "Upbeat": 52, 
             "Personable": 48
+        }
+    }, 
+    "@QueenRania": {
+        "Following": 39, 
+        "Tweets": 1578, 
+        "Followers": 5360449, 
+        "Name": "Rania Al Abdullah", 
+        "Scores": {
+            "Sensory": 11, 
+            "Plugged In": 20, 
+            "Depressed": 45, 
+            "Angry": 23, 
+            "Spacy/Valley girl": 35, 
+            "Worried": 24, 
+            "Arrogant/Distant": 11, 
+            "Analytic": 14, 
+            "In-the-moment": 40, 
+            "Upbeat": 38, 
+            "Personable": 12
         }
     }, 
     "@SethMacFarlane": {
@@ -4728,25 +4785,6 @@
             "In-the-moment": 42, 
             "Upbeat": 40, 
             "Personable": 24
-        }
-    }, 
-    "@juliaperrez": {
-        "Following": 1419, 
-        "Tweets": 86065, 
-        "Followers": 4773423, 
-        "Name": "juliaperez", 
-        "Scores": {
-            "Sensory": 21, 
-            "Plugged In": 40, 
-            "Depressed": 42, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 42, 
-            "Worried": 32, 
-            "Arrogant/Distant": 49, 
-            "Analytic": 12, 
-            "In-the-moment": 43, 
-            "Upbeat": 15, 
-            "Personable": 12
         }
     }, 
     "@FoxNews": {
@@ -4899,25 +4937,6 @@
             "In-the-moment": 37, 
             "Upbeat": 25, 
             "Personable": 30
-        }
-    }, 
-    "@amrwaked": {
-        "Following": 293, 
-        "Tweets": 13289, 
-        "Followers": 4001569, 
-        "Name": "Amr Waked", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 15, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 24, 
-            "Worried": 20, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
         }
     }, 
     "@KimKardashian": {
@@ -5414,25 +5433,6 @@
             "Personable": 71
         }
     }, 
-    "@sherinasinna": {
-        "Following": 370, 
-        "Tweets": 12123, 
-        "Followers": 10758939, 
-        "Name": "Sherina Sinna", 
-        "Scores": {
-            "Sensory": 44, 
-            "Plugged In": 27, 
-            "Depressed": 37, 
-            "Angry": 36, 
-            "Spacy/Valley girl": 46, 
-            "Worried": 44, 
-            "Arrogant/Distant": 52, 
-            "Analytic": 15, 
-            "In-the-moment": 48, 
-            "Upbeat": 34, 
-            "Personable": 25
-        }
-    }, 
     "@NatGeo": {
         "Following": 18, 
         "Tweets": 33301, 
@@ -5604,25 +5604,6 @@
             "Personable": 48
         }
     }, 
-    "@GermanGarmendia": {
-        "Following": 1293, 
-        "Tweets": 11661, 
-        "Followers": 8351212, 
-        "Name": "German Garmendia", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 47, 
-            "Depressed": 42, 
-            "Angry": 32, 
-            "Spacy/Valley girl": 33, 
-            "Worried": 59, 
-            "Arrogant/Distant": 42, 
-            "Analytic": 22, 
-            "In-the-moment": 41, 
-            "Upbeat": 22, 
-            "Personable": 20
-        }
-    }, 
     "@FinallyMario": {
         "Following": 64, 
         "Tweets": 1121, 
@@ -5737,25 +5718,6 @@
             "Personable": 42
         }
     }, 
-    "@VhongX44": {
-        "Following": 209, 
-        "Tweets": 3147, 
-        "Followers": 5003639, 
-        "Name": "Vhong Navarro", 
-        "Scores": {
-            "Sensory": 23, 
-            "Plugged In": 33, 
-            "Depressed": 39, 
-            "Angry": 49, 
-            "Spacy/Valley girl": 58, 
-            "Worried": 47, 
-            "Arrogant/Distant": 45, 
-            "Analytic": 9, 
-            "In-the-moment": 43, 
-            "Upbeat": 19, 
-            "Personable": 19
-        }
-    }, 
     "@serenawilliams": {
         "Following": 337, 
         "Tweets": 13536, 
@@ -5811,25 +5773,6 @@
             "In-the-moment": 57, 
             "Upbeat": 88, 
             "Personable": 78
-        }
-    }, 
-    "@dahSyatMusik": {
-        "Following": 632, 
-        "Tweets": 53177, 
-        "Followers": 4670013, 
-        "Name": "dahSyat", 
-        "Scores": {
-            "Sensory": 24, 
-            "Plugged In": 29, 
-            "Depressed": 47, 
-            "Angry": 24, 
-            "Spacy/Valley girl": 38, 
-            "Worried": 29, 
-            "Arrogant/Distant": 52, 
-            "Analytic": 9, 
-            "In-the-moment": 44, 
-            "Upbeat": 10, 
-            "Personable": 8
         }
     }, 
     "@lindsaylohan": {
@@ -5927,25 +5870,6 @@
             "Personable": 29
         }
     }, 
-    "@Tatawerneck": {
-        "Following": 1937, 
-        "Tweets": 7276, 
-        "Followers": 8687206, 
-        "Name": "Tata werneck", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 37, 
-            "Depressed": 42, 
-            "Angry": 27, 
-            "Spacy/Valley girl": 38, 
-            "Worried": 94, 
-            "Arrogant/Distant": 44, 
-            "Analytic": 11, 
-            "In-the-moment": 36, 
-            "Upbeat": 13, 
-            "Personable": 24
-        }
-    }, 
     "@DollyParton": {
         "Following": 35, 
         "Tweets": 1230, 
@@ -6022,25 +5946,6 @@
             "Personable": 25
         }
     }, 
-    "@lulopilato": {
-        "Following": 106, 
-        "Tweets": 7105, 
-        "Followers": 5860058, 
-        "Name": "Luisana Lopilato", 
-        "Scores": {
-            "Arrogant/Distant": 37, 
-            "Spacy/Valley girl": 56, 
-            "Depressed": 46, 
-            "Angry": 25, 
-            "Plugged In": 42, 
-            "Worried": 75, 
-            "Sensory": 15, 
-            "Analytic": 14, 
-            "Upbeat": 23, 
-            "In-the-moment": 34, 
-            "Personable": 29
-        }
-    }, 
     "@galifianakisz": {
         "Following": 0, 
         "Tweets": 105, 
@@ -6058,6 +5963,25 @@
             "Upbeat": 42, 
             "In-the-moment": 32, 
             "Personable": 26
+        }
+    }, 
+    "@Pontifex": {
+        "Following": 8, 
+        "Tweets": 938, 
+        "Followers": 9793466, 
+        "Name": "Pope Francis", 
+        "Scores": {
+            "Arrogant/Distant": 63, 
+            "Spacy/Valley girl": 62, 
+            "Depressed": 23, 
+            "Angry": 47, 
+            "Plugged In": 78, 
+            "Worried": 33, 
+            "Sensory": 79, 
+            "Analytic": 66, 
+            "Upbeat": 100, 
+            "In-the-moment": 27, 
+            "Personable": 76
         }
     }, 
     "@KendallJenner": {
@@ -6098,25 +6022,6 @@
             "Personable": 24
         }
     }, 
-    "@inijedar": {
-        "Following": 3, 
-        "Tweets": 41944, 
-        "Followers": 7130891, 
-        "Name": "Jessica Iskandar", 
-        "Scores": {
-            "Arrogant/Distant": 64, 
-            "Spacy/Valley girl": 49, 
-            "Depressed": 32, 
-            "Angry": 23, 
-            "Plugged In": 82, 
-            "Worried": 31, 
-            "Sensory": 14, 
-            "Analytic": 12, 
-            "Upbeat": 34, 
-            "In-the-moment": 43, 
-            "Personable": 16
-        }
-    }, 
     "@annecurtissmith": {
         "Following": 1469, 
         "Tweets": 40962, 
@@ -6155,25 +6060,6 @@
             "Personable": 58
         }
     }, 
-    "@vidialdiano": {
-        "Following": 514, 
-        "Tweets": 28842, 
-        "Followers": 8620437, 
-        "Name": "Vidi Aldiano", 
-        "Scores": {
-            "Arrogant/Distant": 54, 
-            "Spacy/Valley girl": 36, 
-            "Depressed": 40, 
-            "Angry": 19, 
-            "Plugged In": 54, 
-            "Worried": 20, 
-            "Sensory": 31, 
-            "Analytic": 9, 
-            "Upbeat": 18, 
-            "In-the-moment": 41, 
-            "Personable": 8
-        }
-    }, 
     "@sonunigam": {
         "Following": 3, 
         "Tweets": 8195, 
@@ -6191,25 +6077,6 @@
             "Upbeat": 83, 
             "In-the-moment": 52, 
             "Personable": 56
-        }
-    }, 
-    "@AlArabiya": {
-        "Following": 36, 
-        "Tweets": 115122, 
-        "Followers": 10780787, 
-        "Name": "\u0642\u0646\u0627\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629", 
-        "Scores": {
-            "Arrogant/Distant": 6, 
-            "Spacy/Valley girl": 13, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Plugged In": 13, 
-            "Worried": 20, 
-            "Sensory": 10, 
-            "Analytic": 8, 
-            "Upbeat": 9, 
-            "In-the-moment": 43, 
-            "Personable": 5
         }
     }, 
     "@TheRock": {
@@ -6324,25 +6191,6 @@
             "Upbeat": 49, 
             "In-the-moment": 45, 
             "Personable": 42
-        }
-    }, 
-    "@Residente": {
-        "Following": 1308, 
-        "Tweets": 25074, 
-        "Followers": 5722085, 
-        "Name": "Residente", 
-        "Scores": {
-            "Sensory": 16, 
-            "Plugged In": 33, 
-            "Depressed": 42, 
-            "Angry": 23, 
-            "Spacy/Valley girl": 48, 
-            "Worried": 29, 
-            "Arrogant/Distant": 49, 
-            "Analytic": 18, 
-            "In-the-moment": 38, 
-            "Upbeat": 23, 
-            "Personable": 12
         }
     }, 
     "@Asli_Jacqueline": {
@@ -6573,25 +6421,6 @@
             "Personable": 85
         }
     }, 
-    "@TomCavalcante1": {
-        "Following": 291, 
-        "Tweets": 17256, 
-        "Followers": 4363533, 
-        "Name": "TOM CAVALCANTE", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 25, 
-            "Depressed": 46, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 56, 
-            "Worried": 34, 
-            "Arrogant/Distant": 51, 
-            "Analytic": 13, 
-            "In-the-moment": 41, 
-            "Upbeat": 11, 
-            "Personable": 7
-        }
-    }, 
     "@Beyonce": {
         "Following": 10, 
         "Tweets": 9, 
@@ -6630,44 +6459,6 @@
             "Personable": 28
         }
     }, 
-    "@TiagoLeifert": {
-        "Following": 278, 
-        "Tweets": 26392, 
-        "Followers": 5473295, 
-        "Name": "Tiago Leifert", 
-        "Scores": {
-            "Sensory": 14, 
-            "Plugged In": 37, 
-            "Depressed": 33, 
-            "Angry": 19, 
-            "Spacy/Valley girl": 35, 
-            "Worried": 26, 
-            "Arrogant/Distant": 48, 
-            "Analytic": 22, 
-            "In-the-moment": 37, 
-            "Upbeat": 38, 
-            "Personable": 19
-        }
-    }, 
-    "@Ahlam_Alshamsi": {
-        "Following": 668, 
-        "Tweets": 46865, 
-        "Followers": 6747798, 
-        "Name": "Ahlam - \u0627\u062d\u0644\u0627\u0645", 
-        "Scores": {
-            "Sensory": 11, 
-            "Plugged In": 14, 
-            "Depressed": 48, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 10, 
-            "Worried": 20, 
-            "Arrogant/Distant": 7, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
     "@AvrilLavigne": {
         "Following": 129, 
         "Tweets": 3381, 
@@ -6704,25 +6495,6 @@
             "In-the-moment": 46, 
             "Upbeat": 60, 
             "Personable": 41
-        }
-    }, 
-    "@manuginobili": {
-        "Following": 97, 
-        "Tweets": 5377, 
-        "Followers": 3984272, 
-        "Name": "Manu Ginobili", 
-        "Scores": {
-            "Sensory": 18, 
-            "Plugged In": 34, 
-            "Depressed": 38, 
-            "Angry": 23, 
-            "Spacy/Valley girl": 45, 
-            "Worried": 48, 
-            "Arrogant/Distant": 48, 
-            "Analytic": 13, 
-            "In-the-moment": 34, 
-            "Upbeat": 28, 
-            "Personable": 16
         }
     }, 
     "@carmeloanthony": {
@@ -6801,25 +6573,6 @@
             "Personable": 80
         }
     }, 
-    "@LucianoHuck": {
-        "Following": 391, 
-        "Tweets": 9786, 
-        "Followers": 12347244, 
-        "Name": "Luciano Huck", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 25, 
-            "Depressed": 37, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 57, 
-            "Worried": 20, 
-            "Arrogant/Distant": 41, 
-            "Analytic": 15, 
-            "In-the-moment": 41, 
-            "Upbeat": 18, 
-            "Personable": 8
-        }
-    }, 
     "@RealHughJackman": {
         "Following": 14, 
         "Tweets": 2473, 
@@ -6875,25 +6628,6 @@
             "In-the-moment": 30, 
             "Upbeat": 100, 
             "Personable": 79
-        }
-    }, 
-    "@basuki_btp": {
-        "Following": 51, 
-        "Tweets": 2372, 
-        "Followers": 5538156, 
-        "Name": "Ahok Basuki TPurnama", 
-        "Scores": {
-            "Arrogant/Distant": 62, 
-            "Spacy/Valley girl": 36, 
-            "Depressed": 44, 
-            "Angry": 17, 
-            "Plugged In": 22, 
-            "Worried": 23, 
-            "Sensory": 14, 
-            "Analytic": 8, 
-            "Upbeat": 11, 
-            "In-the-moment": 44, 
-            "Personable": 6
         }
     }, 
     "@Sony": {
@@ -7067,23 +6801,23 @@
             "Personable": 30
         }
     }, 
-    "@thalia": {
-        "Following": 1664, 
-        "Tweets": 20218, 
-        "Followers": 8608252, 
-        "Name": "Thalia", 
+    "@paulocoelho": {
+        "Following": 239, 
+        "Tweets": 31236, 
+        "Followers": 11197001, 
+        "Name": "Paulo Coelho", 
         "Scores": {
-            "Arrogant/Distant": 34, 
-            "Spacy/Valley girl": 63, 
-            "Depressed": 44, 
-            "Angry": 25, 
-            "Plugged In": 43, 
-            "Worried": 38, 
-            "Sensory": 27, 
-            "Analytic": 12, 
-            "Upbeat": 22, 
-            "In-the-moment": 43, 
-            "Personable": 16
+            "Sensory": 15, 
+            "Plugged In": 31, 
+            "Depressed": 49, 
+            "Angry": 39, 
+            "Spacy/Valley girl": 54, 
+            "Worried": 22, 
+            "Arrogant/Distant": 32, 
+            "Analytic": 35, 
+            "In-the-moment": 38, 
+            "Upbeat": 21, 
+            "Personable": 21
         }
     }, 
     "@Ubisoft": {
@@ -7198,25 +6932,6 @@
             "In-the-moment": 45, 
             "Upbeat": 44, 
             "Personable": 40
-        }
-    }, 
-    "@CMYLMZ": {
-        "Following": 130, 
-        "Tweets": 196, 
-        "Followers": 11695238, 
-        "Name": "Cem Y\u0131lmaz", 
-        "Scores": {
-            "Sensory": 14, 
-            "Plugged In": 18, 
-            "Depressed": 54, 
-            "Angry": 18, 
-            "Spacy/Valley girl": 57, 
-            "Worried": 34, 
-            "Arrogant/Distant": 32, 
-            "Analytic": 8, 
-            "In-the-moment": 44, 
-            "Upbeat": 12, 
-            "Personable": 10
         }
     }, 
     "@thekiranbedi": {
@@ -7371,25 +7086,6 @@
             "Personable": 31
         }
     }, 
-    "@TheArabHash": {
-        "Following": 2269059, 
-        "Tweets": 46047, 
-        "Followers": 3793510, 
-        "Name": "\u0647\u0627\u0634\u062a\u0627\u0642 \u0627\u0644\u0639\u0631\u0628", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 12, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 11, 
-            "Worried": 20, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
     "@official_flo": {
         "Following": 2387, 
         "Tweets": 22654, 
@@ -7407,25 +7103,6 @@
             "In-the-moment": 38, 
             "Upbeat": 62, 
             "Personable": 33
-        }
-    }, 
-    "@oceara": {
-        "Following": 284, 
-        "Tweets": 7332, 
-        "Followers": 6249379, 
-        "Name": "Snap: cearawm", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 24, 
-            "Depressed": 42, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 76, 
-            "Worried": 20, 
-            "Arrogant/Distant": 43, 
-            "Analytic": 17, 
-            "In-the-moment": 39, 
-            "Upbeat": 13, 
-            "Personable": 7
         }
     }, 
     "@chrisbrown": {
@@ -7542,25 +7219,6 @@
             "Personable": 29
         }
     }, 
-    "@donghae861015": {
-        "Following": 109, 
-        "Tweets": 1935, 
-        "Followers": 4943557, 
-        "Name": "Super Junior \uc774\ub3d9\ud574", 
-        "Scores": {
-            "Sensory": 14, 
-            "Plugged In": 14, 
-            "Depressed": 39, 
-            "Angry": 19, 
-            "Spacy/Valley girl": 29, 
-            "Worried": 31, 
-            "Arrogant/Distant": 8, 
-            "Analytic": 9, 
-            "In-the-moment": 45, 
-            "Upbeat": 19, 
-            "Personable": 11
-        }
-    }, 
     "@joejonas": {
         "Following": 1103, 
         "Tweets": 8996, 
@@ -7675,25 +7333,6 @@
             "Personable": 64
         }
     }, 
-    "@zoetheband": {
-        "Following": 190, 
-        "Tweets": 7516, 
-        "Followers": 4359586, 
-        "Name": "Zo\u00e9", 
-        "Scores": {
-            "Sensory": 11, 
-            "Plugged In": 43, 
-            "Depressed": 45, 
-            "Angry": 24, 
-            "Spacy/Valley girl": 48, 
-            "Worried": 24, 
-            "Arrogant/Distant": 50, 
-            "Analytic": 13, 
-            "In-the-moment": 38, 
-            "Upbeat": 10, 
-            "Personable": 8
-        }
-    }, 
     "@theweeknd": {
         "Following": 1274, 
         "Tweets": 2272, 
@@ -7732,25 +7371,6 @@
             "Personable": 59
         }
     }, 
-    "@pepatah": {
-        "Following": 150, 
-        "Tweets": 48745, 
-        "Followers": 6958062, 
-        "Name": "pepatah", 
-        "Scores": {
-            "Sensory": 11, 
-            "Plugged In": 15, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 37, 
-            "Worried": 20, 
-            "Arrogant/Distant": 68, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
     "@KeriHilson": {
         "Following": 389, 
         "Tweets": 11950, 
@@ -7768,25 +7388,6 @@
             "In-the-moment": 67, 
             "Upbeat": 47, 
             "Personable": 54
-        }
-    }, 
-    "@silagencoglu": {
-        "Following": 169, 
-        "Tweets": 1314, 
-        "Followers": 4903216, 
-        "Name": "S\u0131la Gen\u00e7o\u011flu", 
-        "Scores": {
-            "Sensory": 14, 
-            "Plugged In": 20, 
-            "Depressed": 51, 
-            "Angry": 18, 
-            "Spacy/Valley girl": 55, 
-            "Worried": 36, 
-            "Arrogant/Distant": 22, 
-            "Analytic": 8, 
-            "In-the-moment": 45, 
-            "Upbeat": 10, 
-            "Personable": 9
         }
     }, 
     "@Funny_Truth": {
@@ -7960,25 +7561,6 @@
             "Personable": 35
         }
     }, 
-    "@BruMarquezine": {
-        "Following": 453, 
-        "Tweets": 11802, 
-        "Followers": 4265678, 
-        "Name": "Bruna Marquezine", 
-        "Scores": {
-            "Sensory": 28, 
-            "Plugged In": 73, 
-            "Depressed": 22, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 36, 
-            "Worried": 90, 
-            "Arrogant/Distant": 69, 
-            "Analytic": 12, 
-            "In-the-moment": 43, 
-            "Upbeat": 38, 
-            "Personable": 27
-        }
-    }, 
     "@FLOTUS": {
         "Following": 24, 
         "Tweets": 3882, 
@@ -8017,42 +7599,23 @@
             "Personable": 25
         }
     }, 
-    "@alexoficial": {
-        "Following": 184, 
-        "Tweets": 6373, 
-        "Followers": 4822331, 
-        "Name": "Alejandro Fernandez", 
+    "@hazardeden10": {
+        "Following": 220, 
+        "Tweets": 1535, 
+        "Followers": 4640104, 
+        "Name": "Eden hazard", 
         "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 40, 
-            "Depressed": 42, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 46, 
-            "Worried": 32, 
-            "Arrogant/Distant": 51, 
-            "Analytic": 10, 
-            "In-the-moment": 40, 
-            "Upbeat": 15, 
-            "Personable": 10
-        }
-    }, 
-    "@Metro_TV": {
-        "Following": 75, 
-        "Tweets": 763784, 
-        "Followers": 9283803, 
-        "Name": "METRO TV", 
-        "Scores": {
-            "Sensory": 19, 
-            "Plugged In": 13, 
-            "Depressed": 45, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 65, 
-            "Worried": 24, 
-            "Arrogant/Distant": 43, 
-            "Analytic": 8, 
-            "In-the-moment": 42, 
-            "Upbeat": 11, 
-            "Personable": 7
+            "Sensory": 28, 
+            "Plugged In": 66, 
+            "Depressed": 31, 
+            "Angry": 36, 
+            "Spacy/Valley girl": 60, 
+            "Worried": 30, 
+            "Arrogant/Distant": 30, 
+            "Analytic": 16, 
+            "In-the-moment": 52, 
+            "Upbeat": 72, 
+            "Personable": 40
         }
     }, 
     "@MirzaSania": {
@@ -8129,25 +7692,6 @@
             "In-the-moment": 65, 
             "Upbeat": 87, 
             "Personable": 82
-        }
-    }, 
-    "@jokowi": {
-        "Following": 57, 
-        "Tweets": 453, 
-        "Followers": 5785659, 
-        "Name": "Joko Widodo", 
-        "Scores": {
-            "Sensory": 20, 
-            "Plugged In": 15, 
-            "Depressed": 45, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 42, 
-            "Worried": 27, 
-            "Arrogant/Distant": 59, 
-            "Analytic": 8, 
-            "In-the-moment": 42, 
-            "Upbeat": 10, 
-            "Personable": 7
         }
     }, 
     "@shreyaghoshal": {
@@ -8283,6 +7827,25 @@
             "Personable": 35
         }
     }, 
+    "@YSL": {
+        "Following": 141, 
+        "Tweets": 865, 
+        "Followers": 3774551, 
+        "Name": "Yves Saint Laurent", 
+        "Scores": {
+            "Sensory": 10, 
+            "Plugged In": 15, 
+            "Depressed": 47, 
+            "Angry": 19, 
+            "Spacy/Valley girl": 0, 
+            "Worried": 20, 
+            "Arrogant/Distant": 52, 
+            "Analytic": 24, 
+            "In-the-moment": 25, 
+            "Upbeat": 9, 
+            "Personable": 15
+        }
+    }, 
     "@twittertv": {
         "Following": 1562, 
         "Tweets": 12953, 
@@ -8338,44 +7901,6 @@
             "In-the-moment": 28, 
             "Upbeat": 69, 
             "Personable": 19
-        }
-    }, 
-    "@mbc1": {
-        "Following": 24, 
-        "Tweets": 83610, 
-        "Followers": 6464852, 
-        "Name": "MBC1", 
-        "Scores": {
-            "Sensory": 14, 
-            "Plugged In": 16, 
-            "Depressed": 48, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 9, 
-            "Worried": 20, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
-    "@mbc2": {
-        "Following": 0, 
-        "Tweets": 49780, 
-        "Followers": 4735178, 
-        "Name": "mbc2", 
-        "Scores": {
-            "Sensory": 11, 
-            "Plugged In": 17, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 15, 
-            "Worried": 20, 
-            "Arrogant/Distant": 8, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
         }
     }, 
     "@JColeNC": {
@@ -8701,25 +8226,6 @@
             "Personable": 18
         }
     }, 
-    "@tvOneNews": {
-        "Following": 47, 
-        "Tweets": 104789, 
-        "Followers": 7700403, 
-        "Name": "tvOneNews", 
-        "Scores": {
-            "Sensory": 12, 
-            "Plugged In": 32, 
-            "Depressed": 32, 
-            "Angry": 36, 
-            "Spacy/Valley girl": 29, 
-            "Worried": 29, 
-            "Arrogant/Distant": 58, 
-            "Analytic": 13, 
-            "In-the-moment": 45, 
-            "Upbeat": 26, 
-            "Personable": 14
-        }
-    }, 
     "@Dropbox": {
         "Following": 75, 
         "Tweets": 3136, 
@@ -8853,25 +8359,6 @@
             "Personable": 39
         }
     }, 
-    "@yilmazerdogan": {
-        "Following": 45, 
-        "Tweets": 562, 
-        "Followers": 4304185, 
-        "Name": "Y\u0131lmaz Erdo\u011fan", 
-        "Scores": {
-            "Sensory": 35, 
-            "Plugged In": 37, 
-            "Depressed": 49, 
-            "Angry": 23, 
-            "Spacy/Valley girl": 47, 
-            "Worried": 34, 
-            "Arrogant/Distant": 43, 
-            "Analytic": 10, 
-            "In-the-moment": 44, 
-            "Upbeat": 22, 
-            "Personable": 13
-        }
-    }, 
     "@BlackBerry": {
         "Following": 3476, 
         "Tweets": 27104, 
@@ -8889,6 +8376,25 @@
             "In-the-moment": 39, 
             "Upbeat": 82, 
             "Personable": 59
+        }
+    }, 
+    "@RolaWorLD": {
+        "Following": 154, 
+        "Tweets": 2858, 
+        "Followers": 3699300, 
+        "Name": "ROLA", 
+        "Scores": {
+            "Sensory": 22, 
+            "Plugged In": 17, 
+            "Depressed": 55, 
+            "Angry": 19, 
+            "Spacy/Valley girl": 33, 
+            "Worried": 20, 
+            "Arrogant/Distant": 15, 
+            "Analytic": 11, 
+            "In-the-moment": 42, 
+            "Upbeat": 12, 
+            "Personable": 7
         }
     }, 
     "@elissakh": {
@@ -8929,23 +8435,23 @@
             "Personable": 90
         }
     }, 
-    "@SBYudhoyono": {
-        "Following": 155, 
-        "Tweets": 4479, 
-        "Followers": 9293099, 
-        "Name": "S. B. Yudhoyono", 
+    "@aguerosergiokun": {
+        "Following": 114, 
+        "Tweets": 4202, 
+        "Followers": 10395486, 
+        "Name": "Sergio Kun Aguero", 
         "Scores": {
-            "Sensory": 27, 
-            "Plugged In": 15, 
-            "Depressed": 45, 
-            "Angry": 19, 
-            "Spacy/Valley girl": 31, 
-            "Worried": 20, 
-            "Arrogant/Distant": 65, 
-            "Analytic": 9, 
-            "In-the-moment": 41, 
-            "Upbeat": 10, 
-            "Personable": 6
+            "Arrogant/Distant": 44, 
+            "Spacy/Valley girl": 49, 
+            "Depressed": 21, 
+            "Angry": 21, 
+            "Plugged In": 34, 
+            "Worried": 22, 
+            "Sensory": 13, 
+            "Analytic": 16, 
+            "Upbeat": 76, 
+            "In-the-moment": 35, 
+            "Personable": 25
         }
     }, 
     "@ImRaina": {
@@ -9100,25 +8606,6 @@
             "Personable": 28
         }
     }, 
-    "@TareqAlSuwaidan": {
-        "Following": 19, 
-        "Tweets": 18595, 
-        "Followers": 7710271, 
-        "Name": "\u062f. \u0637\u0627\u0631\u0642 \u0627\u0644\u0633\u0648\u064a\u062f\u0627\u0646", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 12, 
-            "Depressed": 48, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 25, 
-            "Worried": 20, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
     "@realDonaldTrump": {
         "Following": 42, 
         "Tweets": 33156, 
@@ -9174,6 +8661,25 @@
             "In-the-moment": 42, 
             "Upbeat": 25, 
             "Personable": 28
+        }
+    }, 
+    "@kevadamsss": {
+        "Following": 832, 
+        "Tweets": 10693, 
+        "Followers": 4528754, 
+        "Name": "Kev Adams", 
+        "Scores": {
+            "Sensory": 16, 
+            "Plugged In": 57, 
+            "Depressed": 40, 
+            "Angry": 22, 
+            "Spacy/Valley girl": 54, 
+            "Worried": 39, 
+            "Arrogant/Distant": 46, 
+            "Analytic": 12, 
+            "In-the-moment": 40, 
+            "Upbeat": 31, 
+            "Personable": 19
         }
     }, 
     "@WhatTheFFacts": {
@@ -9499,25 +9005,6 @@
             "Personable": 23
         }
     }, 
-    "@Poconggg": {
-        "Following": 0, 
-        "Tweets": 30073, 
-        "Followers": 4032926, 
-        "Name": "ariefmuhammad", 
-        "Scores": {
-            "Sensory": 27, 
-            "Plugged In": 40, 
-            "Depressed": 54, 
-            "Angry": 32, 
-            "Spacy/Valley girl": 43, 
-            "Worried": 46, 
-            "Arrogant/Distant": 42, 
-            "Analytic": 12, 
-            "In-the-moment": 35, 
-            "Upbeat": 12, 
-            "Personable": 14
-        }
-    }, 
     "@chelseahandler": {
         "Following": 94, 
         "Tweets": 5490, 
@@ -9670,6 +9157,25 @@
             "Personable": 67
         }
     }, 
+    "@RafaelNadal": {
+        "Following": 77, 
+        "Tweets": 2307, 
+        "Followers": 11028404, 
+        "Name": "Rafa Nadal", 
+        "Scores": {
+            "Sensory": 27, 
+            "Plugged In": 69, 
+            "Depressed": 46, 
+            "Angry": 24, 
+            "Spacy/Valley girl": 49, 
+            "Worried": 22, 
+            "Arrogant/Distant": 53, 
+            "Analytic": 16, 
+            "In-the-moment": 24, 
+            "Upbeat": 35, 
+            "Personable": 17
+        }
+    }, 
     "@twitterapi": {
         "Following": 47, 
         "Tweets": 3577, 
@@ -9727,25 +9233,6 @@
             "Personable": 15
         }
     }, 
-    "@angelicaksy": {
-        "Following": 157, 
-        "Tweets": 5554, 
-        "Followers": 4478081, 
-        "Name": "angelica huck", 
-        "Scores": {
-            "Sensory": 12, 
-            "Plugged In": 50, 
-            "Depressed": 38, 
-            "Angry": 18, 
-            "Spacy/Valley girl": 69, 
-            "Worried": 22, 
-            "Arrogant/Distant": 65, 
-            "Analytic": 14, 
-            "In-the-moment": 41, 
-            "Upbeat": 16, 
-            "Personable": 8
-        }
-    }, 
     "@WalkingDead_AMC": {
         "Following": 208, 
         "Tweets": 135763, 
@@ -9801,25 +9288,6 @@
             "In-the-moment": 33, 
             "Upbeat": 75, 
             "Personable": 28
-        }
-    }, 
-    "@TweetRAMALAN": {
-        "Following": 38, 
-        "Tweets": 110106, 
-        "Followers": 12109078, 
-        "Name": "Ramalan Indonesia", 
-        "Scores": {
-            "Sensory": 18, 
-            "Plugged In": 29, 
-            "Depressed": 42, 
-            "Angry": 23, 
-            "Spacy/Valley girl": 40, 
-            "Worried": 29, 
-            "Arrogant/Distant": 50, 
-            "Analytic": 8, 
-            "In-the-moment": 42, 
-            "Upbeat": 16, 
-            "Personable": 8
         }
     }, 
     "@johngreen": {
@@ -9955,6 +9423,25 @@
             "Personable": 41
         }
     }, 
+    "@ValeYellow46": {
+        "Following": 316, 
+        "Tweets": 3562, 
+        "Followers": 4615132, 
+        "Name": "Valentino Rossi", 
+        "Scores": {
+            "Sensory": 18, 
+            "Plugged In": 30, 
+            "Depressed": 27, 
+            "Angry": 21, 
+            "Spacy/Valley girl": 49, 
+            "Worried": 28, 
+            "Arrogant/Distant": 68, 
+            "Analytic": 32, 
+            "In-the-moment": 36, 
+            "Upbeat": 40, 
+            "Personable": 15
+        }
+    }, 
     "@shakira": {
         "Following": 183, 
         "Tweets": 4199, 
@@ -10010,25 +9497,6 @@
             "Upbeat": 99, 
             "In-the-moment": 51, 
             "Personable": 78
-        }
-    }, 
-    "@Titi_KamaLL": {
-        "Following": 1009, 
-        "Tweets": 23053, 
-        "Followers": 3790524, 
-        "Name": "Titi Kamal", 
-        "Scores": {
-            "Sensory": 21, 
-            "Plugged In": 51, 
-            "Depressed": 35, 
-            "Angry": 20, 
-            "Spacy/Valley girl": 39, 
-            "Worried": 28, 
-            "Arrogant/Distant": 52, 
-            "Analytic": 8, 
-            "In-the-moment": 39, 
-            "Upbeat": 26, 
-            "Personable": 11
         }
     }, 
     "@vjdaniel": {
@@ -10107,6 +9575,25 @@
             "Personable": 78
         }
     }, 
+    "@IrfanBachdim10": {
+        "Following": 169, 
+        "Tweets": 3442, 
+        "Followers": 4877646, 
+        "Name": "Irfan Bachdim", 
+        "Scores": {
+            "Sensory": 81, 
+            "Plugged In": 65, 
+            "Depressed": 35, 
+            "Angry": 33, 
+            "Spacy/Valley girl": 54, 
+            "Worried": 25, 
+            "Arrogant/Distant": 51, 
+            "Analytic": 30, 
+            "In-the-moment": 57, 
+            "Upbeat": 62, 
+            "Personable": 33
+        }
+    }, 
     "@JKCorden": {
         "Following": 1845, 
         "Tweets": 8983, 
@@ -10124,25 +9611,6 @@
             "In-the-moment": 46, 
             "Upbeat": 54, 
             "Personable": 39
-        }
-    }, 
-    "@mangelrogel": {
-        "Following": 694, 
-        "Tweets": 41537, 
-        "Followers": 3745169, 
-        "Name": "Mangel", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 36, 
-            "Depressed": 54, 
-            "Angry": 29, 
-            "Spacy/Valley girl": 15, 
-            "Worried": 91, 
-            "Arrogant/Distant": 47, 
-            "Analytic": 14, 
-            "In-the-moment": 40, 
-            "Upbeat": 16, 
-            "Personable": 34
         }
     }, 
     "@LanaDelRey": {
@@ -10219,25 +9687,6 @@
             "In-the-moment": 76, 
             "Upbeat": 75, 
             "Personable": 87
-        }
-    }, 
-    "@shireensungkar": {
-        "Following": 719, 
-        "Tweets": 10552, 
-        "Followers": 6718988, 
-        "Name": "shireen sungkar", 
-        "Scores": {
-            "Sensory": 17, 
-            "Plugged In": 33, 
-            "Depressed": 43, 
-            "Angry": 23, 
-            "Spacy/Valley girl": 46, 
-            "Worried": 28, 
-            "Arrogant/Distant": 40, 
-            "Analytic": 9, 
-            "In-the-moment": 44, 
-            "Upbeat": 15, 
-            "Personable": 10
         }
     }, 
     "@KylieJenner": {
@@ -10601,25 +10050,6 @@
             "Personable": 22
         }
     }, 
-    "@MarceloTas": {
-        "Following": 2418, 
-        "Tweets": 18294, 
-        "Followers": 9387084, 
-        "Name": "Marcelo Tas", 
-        "Scores": {
-            "Sensory": 13, 
-            "Plugged In": 34, 
-            "Depressed": 48, 
-            "Angry": 22, 
-            "Spacy/Valley girl": 47, 
-            "Worried": 35, 
-            "Arrogant/Distant": 45, 
-            "Analytic": 12, 
-            "In-the-moment": 35, 
-            "Upbeat": 13, 
-            "Personable": 9
-        }
-    }, 
     "@ICC": {
         "Following": 94, 
         "Tweets": 42242, 
@@ -10772,25 +10202,6 @@
             "Personable": 22
         }
     }, 
-    "@lemondefr": {
-        "Following": 389, 
-        "Tweets": 184722, 
-        "Followers": 5975015, 
-        "Name": "Le Monde", 
-        "Scores": {
-            "Sensory": 16, 
-            "Plugged In": 15, 
-            "Depressed": 50, 
-            "Angry": 25, 
-            "Spacy/Valley girl": 47, 
-            "Worried": 30, 
-            "Arrogant/Distant": 34, 
-            "Analytic": 11, 
-            "In-the-moment": 42, 
-            "Upbeat": 13, 
-            "Personable": 8
-        }
-    }, 
     "@twitter": {
         "Following": 145, 
         "Tweets": 3137, 
@@ -10808,25 +10219,6 @@
             "Upbeat": 53, 
             "In-the-moment": 35, 
             "Personable": 35
-        }
-    }, 
-    "@SandyLeah": {
-        "Following": 114, 
-        "Tweets": 5019, 
-        "Followers": 5505659, 
-        "Name": "Sandy Leah", 
-        "Scores": {
-            "Sensory": 12, 
-            "Plugged In": 18, 
-            "Depressed": 62, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 63, 
-            "Worried": 25, 
-            "Arrogant/Distant": 31, 
-            "Analytic": 13, 
-            "In-the-moment": 42, 
-            "Upbeat": 12, 
-            "Personable": 9
         }
     }, 
     "@AlanCarr": {
@@ -10848,25 +10240,6 @@
             "Personable": 59
         }
     }, 
-    "@cnnarabic": {
-        "Following": 198, 
-        "Tweets": 96097, 
-        "Followers": 7608237, 
-        "Name": "CNN \u0628\u0627\u0644\u0639\u0631\u0628\u064a\u0629", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 12, 
-            "Depressed": 48, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 15, 
-            "Worried": 20, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
     "@NiallOfficial": {
         "Following": 5776, 
         "Tweets": 10933, 
@@ -10884,25 +10257,6 @@
             "In-the-moment": 44, 
             "Upbeat": 84, 
             "Personable": 65
-        }
-    }, 
-    "@TMCPoldaMetro": {
-        "Following": 0, 
-        "Tweets": 459465, 
-        "Followers": 6115084, 
-        "Name": "TMC Polda Metro Jaya", 
-        "Scores": {
-            "Sensory": 11, 
-            "Plugged In": 15, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 42, 
-            "Worried": 20, 
-            "Arrogant/Distant": 56, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 6
         }
     }, 
     "@IGGYAZALEA": {
@@ -11017,6 +10371,25 @@
             "In-the-moment": 32, 
             "Upbeat": 23, 
             "Personable": 17
+        }
+    }, 
+    "@RomeoSantosPage": {
+        "Following": 39, 
+        "Tweets": 3206, 
+        "Followers": 3771136, 
+        "Name": "Romeo Santos", 
+        "Scores": {
+            "Arrogant/Distant": 41, 
+            "Spacy/Valley girl": 65, 
+            "Depressed": 27, 
+            "Angry": 27, 
+            "Plugged In": 25, 
+            "Worried": 47, 
+            "Sensory": 30, 
+            "Analytic": 13, 
+            "Upbeat": 55, 
+            "In-the-moment": 45, 
+            "Personable": 28
         }
     }, 
     "@TheWeirdWorld": {
@@ -11302,25 +10675,6 @@
             "In-the-moment": 55, 
             "Upbeat": 69, 
             "Personable": 62
-        }
-    }, 
-    "@YengPLUGGEDin": {
-        "Following": 1006, 
-        "Tweets": 36792, 
-        "Followers": 5999806, 
-        "Name": "Yeng Constantino", 
-        "Scores": {
-            "Sensory": 24, 
-            "Plugged In": 39, 
-            "Depressed": 42, 
-            "Angry": 40, 
-            "Spacy/Valley girl": 44, 
-            "Worried": 22, 
-            "Arrogant/Distant": 42, 
-            "Analytic": 10, 
-            "In-the-moment": 45, 
-            "Upbeat": 29, 
-            "Personable": 14
         }
     }, 
     "@rogerfederer": {
@@ -11722,25 +11076,6 @@
             "Personable": 17
         }
     }, 
-    "@amrdiab": {
-        "Following": 2, 
-        "Tweets": 2653, 
-        "Followers": 6122434, 
-        "Name": "Amr Diab", 
-        "Scores": {
-            "Arrogant/Distant": 7, 
-            "Spacy/Valley girl": 22, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Plugged In": 9, 
-            "Worried": 20, 
-            "Sensory": 15, 
-            "Analytic": 9, 
-            "Upbeat": 10, 
-            "In-the-moment": 42, 
-            "Personable": 6
-        }
-    }, 
     "@bipsluvurself": {
         "Following": 156, 
         "Tweets": 8769, 
@@ -11872,82 +11207,6 @@
             "Upbeat": 74, 
             "In-the-moment": 44, 
             "Personable": 51
-        }
-    }, 
-    "@JuanLuisGuerra": {
-        "Following": 42, 
-        "Tweets": 861, 
-        "Followers": 6498274, 
-        "Name": "Juan Luis Guerra", 
-        "Scores": {
-            "Sensory": 12, 
-            "Plugged In": 24, 
-            "Depressed": 45, 
-            "Angry": 19, 
-            "Spacy/Valley girl": 44, 
-            "Worried": 20, 
-            "Arrogant/Distant": 43, 
-            "Analytic": 10, 
-            "In-the-moment": 37, 
-            "Upbeat": 15, 
-            "Personable": 8
-        }
-    }, 
-    "@kasimf": {
-        "Following": 882, 
-        "Tweets": 71671, 
-        "Followers": 3822827, 
-        "Name": "\u0641\u064a\u0635\u0644 \u0627\u0644\u0642\u0627\u0633\u0645", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 12, 
-            "Depressed": 48, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 15, 
-            "Worried": 20, 
-            "Arrogant/Distant": 5, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
-    "@realmadridarab": {
-        "Following": 44, 
-        "Tweets": 18751, 
-        "Followers": 5611553, 
-        "Name": "\u0631\u064a\u0627\u0644 \u0645\u062f\u0631\u064a\u062f", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 16, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 19, 
-            "Worried": 20, 
-            "Arrogant/Distant": 7, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
-    "@DONOMAR": {
-        "Following": 4529, 
-        "Tweets": 39585, 
-        "Followers": 4587874, 
-        "Name": "DON OMAR aka KONG", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 16, 
-            "Depressed": 43, 
-            "Angry": 19, 
-            "Spacy/Valley girl": 71, 
-            "Worried": 20, 
-            "Arrogant/Distant": 23, 
-            "Analytic": 11, 
-            "In-the-moment": 41, 
-            "Upbeat": 18, 
-            "Personable": 10
         }
     }, 
     "@RNTata2000": {
@@ -12197,25 +11456,6 @@
             "Personable": 83
         }
     }, 
-    "@KingSalman": {
-        "Following": 0, 
-        "Tweets": 307, 
-        "Followers": 5448740, 
-        "Name": "\u0633\u0644\u0645\u0627\u0646 \u0628\u0646 \u0639\u0628\u062f\u0627\u0644\u0639\u0632\u064a\u0632", 
-        "Scores": {
-            "Sensory": 11, 
-            "Plugged In": 8, 
-            "Depressed": 46, 
-            "Angry": 18, 
-            "Spacy/Valley girl": 31, 
-            "Worried": 25, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 11, 
-            "Personable": 6
-        }
-    }, 
     "@FactsOfSchool": {
         "Following": 13513, 
         "Tweets": 35243, 
@@ -12349,25 +11589,6 @@
             "Personable": 68
         }
     }, 
-    "@AlArabiya_Brk": {
-        "Following": 36, 
-        "Tweets": 77221, 
-        "Followers": 13843162, 
-        "Name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0639\u0627\u062c\u0644", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 12, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 38, 
-            "Worried": 20, 
-            "Arrogant/Distant": 5, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
-        }
-    }, 
     "@iyavillania": {
         "Following": 708, 
         "Tweets": 25399, 
@@ -12385,25 +11606,6 @@
             "In-the-moment": 56, 
             "Upbeat": 54, 
             "Personable": 45
-        }
-    }, 
-    "@abdulrahman": {
-        "Following": 2675, 
-        "Tweets": 13774, 
-        "Followers": 5466914, 
-        "Name": "\u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0628\u0646 \u0645\u0633\u0627\u0639\u062f", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 15, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 16, 
-            "Worried": 20, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
         }
     }, 
     "@iCarly": {
@@ -12444,6 +11646,25 @@
             "Personable": 40
         }
     }, 
+    "@gadelmaleh": {
+        "Following": 596, 
+        "Tweets": 4434, 
+        "Followers": 6287910, 
+        "Name": "Gad Elmaleh", 
+        "Scores": {
+            "Sensory": 37, 
+            "Plugged In": 58, 
+            "Depressed": 46, 
+            "Angry": 28, 
+            "Spacy/Valley girl": 60, 
+            "Worried": 20, 
+            "Arrogant/Distant": 67, 
+            "Analytic": 17, 
+            "In-the-moment": 46, 
+            "Upbeat": 54, 
+            "Personable": 27
+        }
+    }, 
     "@samsmithworld": {
         "Following": 1213, 
         "Tweets": 12536, 
@@ -12480,82 +11701,6 @@
             "In-the-moment": 32, 
             "Upbeat": 44, 
             "Personable": 23
-        }
-    }, 
-    "@OMARCHAPARRO": {
-        "Following": 1301, 
-        "Tweets": 24513, 
-        "Followers": 6449901, 
-        "Name": "Omar Chaparro", 
-        "Scores": {
-            "Sensory": 11, 
-            "Plugged In": 49, 
-            "Depressed": 35, 
-            "Angry": 18, 
-            "Spacy/Valley girl": 39, 
-            "Worried": 28, 
-            "Arrogant/Distant": 50, 
-            "Analytic": 13, 
-            "In-the-moment": 39, 
-            "Upbeat": 23, 
-            "Personable": 11
-        }
-    }, 
-    "@realwbonner": {
-        "Following": 49, 
-        "Tweets": 10252, 
-        "Followers": 10448433, 
-        "Name": "William Bonner", 
-        "Scores": {
-            "Sensory": 12, 
-            "Plugged In": 28, 
-            "Depressed": 45, 
-            "Angry": 20, 
-            "Spacy/Valley girl": 47, 
-            "Worried": 29, 
-            "Arrogant/Distant": 43, 
-            "Analytic": 12, 
-            "In-the-moment": 37, 
-            "Upbeat": 11, 
-            "Personable": 8
-        }
-    }, 
-    "@daddy_yankee": {
-        "Following": 82, 
-        "Tweets": 17196, 
-        "Followers": 9067672, 
-        "Name": "Daddy Yankee", 
-        "Scores": {
-            "Sensory": 17, 
-            "Plugged In": 61, 
-            "Depressed": 36, 
-            "Angry": 18, 
-            "Spacy/Valley girl": 41, 
-            "Worried": 57, 
-            "Arrogant/Distant": 41, 
-            "Analytic": 14, 
-            "In-the-moment": 38, 
-            "Upbeat": 22, 
-            "Personable": 13
-        }
-    }, 
-    "@SamiAlJaber": {
-        "Following": 118, 
-        "Tweets": 3222, 
-        "Followers": 5277422, 
-        "Name": "\u0633\u0627\u0645\u064a \u0627\u0644\u062c\u0627\u0628\u0631", 
-        "Scores": {
-            "Sensory": 10, 
-            "Plugged In": 13, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Spacy/Valley girl": 10, 
-            "Worried": 20, 
-            "Arrogant/Distant": 6, 
-            "Analytic": 8, 
-            "In-the-moment": 43, 
-            "Upbeat": 9, 
-            "Personable": 5
         }
     }, 
     "@tonyhawk": {
@@ -12672,6 +11817,25 @@
             "Personable": 54
         }
     }, 
+    "@1victorvaldes": {
+        "Following": 54, 
+        "Tweets": 460, 
+        "Followers": 4480166, 
+        "Name": "Victor Valdes", 
+        "Scores": {
+            "Arrogant/Distant": 46, 
+            "Spacy/Valley girl": 43, 
+            "Depressed": 19, 
+            "Angry": 28, 
+            "Plugged In": 31, 
+            "Worried": 33, 
+            "Sensory": 28, 
+            "Analytic": 19, 
+            "Upbeat": 70, 
+            "In-the-moment": 38, 
+            "Personable": 31
+        }
+    }, 
     "@Windows": {
         "Following": 1738, 
         "Tweets": 222253, 
@@ -12708,25 +11872,6 @@
             "Upbeat": 57, 
             "In-the-moment": 32, 
             "Personable": 34
-        }
-    }, 
-    "@raisa6690": {
-        "Following": 441, 
-        "Tweets": 25346, 
-        "Followers": 6651732, 
-        "Name": "Raisa Andriana", 
-        "Scores": {
-            "Arrogant/Distant": 51, 
-            "Spacy/Valley girl": 73, 
-            "Depressed": 30, 
-            "Angry": 42, 
-            "Plugged In": 40, 
-            "Worried": 29, 
-            "Sensory": 30, 
-            "Analytic": 19, 
-            "Upbeat": 74, 
-            "In-the-moment": 43, 
-            "Personable": 37
         }
     }, 
     "@Angelluisr": {
@@ -13052,25 +12197,6 @@
             "Personable": 52
         }
     }, 
-    "@AlHadath": {
-        "Following": 36, 
-        "Tweets": 65188, 
-        "Followers": 4537887, 
-        "Name": "\u0642\u0646\u0627\u0629 \u0627\u0644\u062d\u062f\u062b", 
-        "Scores": {
-            "Arrogant/Distant": 6, 
-            "Spacy/Valley girl": 7, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Plugged In": 12, 
-            "Worried": 20, 
-            "Sensory": 10, 
-            "Analytic": 8, 
-            "Upbeat": 9, 
-            "In-the-moment": 43, 
-            "Personable": 5
-        }
-    }, 
     "@TheEconomist": {
         "Following": 155, 
         "Tweets": 82188, 
@@ -13090,23 +12216,23 @@
             "Personable": 31
         }
     }, 
-    "@SandraDewi88": {
-        "Following": 481, 
-        "Tweets": 37723, 
-        "Followers": 5131881, 
-        "Name": "Sandra Dewi", 
+    "@D_DeGea": {
+        "Following": 196, 
+        "Tweets": 1588, 
+        "Followers": 6190253, 
+        "Name": "David De Gea", 
         "Scores": {
-            "Arrogant/Distant": 41, 
-            "Spacy/Valley girl": 65, 
-            "Depressed": 41, 
-            "Angry": 22, 
-            "Plugged In": 25, 
-            "Worried": 23, 
-            "Sensory": 75, 
-            "Analytic": 13, 
-            "Upbeat": 32, 
-            "In-the-moment": 39, 
-            "Personable": 13
+            "Arrogant/Distant": 52, 
+            "Spacy/Valley girl": 59, 
+            "Depressed": 28, 
+            "Angry": 23, 
+            "Plugged In": 64, 
+            "Worried": 28, 
+            "Sensory": 27, 
+            "Analytic": 18, 
+            "Upbeat": 71, 
+            "In-the-moment": 37, 
+            "Personable": 24
         }
     }, 
     "@RobertDowneyJr": {
@@ -13185,25 +12311,6 @@
             "Personable": 36
         }
     }, 
-    "@7sainaljassmi": {
-        "Following": 9, 
-        "Tweets": 4728, 
-        "Followers": 3854927, 
-        "Name": "Aljassmi \u062d\u0633\u064a\u0646 \u0627\u0644\u062c\u0633\u0645\u064a", 
-        "Scores": {
-            "Arrogant/Distant": 6, 
-            "Spacy/Valley girl": 10, 
-            "Depressed": 47, 
-            "Angry": 17, 
-            "Plugged In": 14, 
-            "Worried": 20, 
-            "Sensory": 11, 
-            "Analytic": 8, 
-            "Upbeat": 9, 
-            "In-the-moment": 43, 
-            "Personable": 5
-        }
-    }, 
     "@Forbes": {
         "Following": 5231, 
         "Tweets": 142100, 
@@ -13240,25 +12347,6 @@
             "Upbeat": 47, 
             "In-the-moment": 49, 
             "Personable": 33
-        }
-    }, 
-    "@twitcam": {
-        "Following": 42, 
-        "Tweets": 15487, 
-        "Followers": 4976743, 
-        "Name": "twitcam", 
-        "Scores": {
-            "Arrogant/Distant": 58, 
-            "Spacy/Valley girl": 60, 
-            "Depressed": 38, 
-            "Angry": 30, 
-            "Plugged In": 60, 
-            "Worried": 32, 
-            "Sensory": 47, 
-            "Analytic": 25, 
-            "Upbeat": 28, 
-            "In-the-moment": 34, 
-            "Personable": 23
         }
     }, 
     "@girIpossts": {
@@ -13354,25 +12442,6 @@
             "Upbeat": 13, 
             "In-the-moment": 13, 
             "Personable": 11
-        }
-    }, 
-    "@cinema21": {
-        "Following": 63, 
-        "Tweets": 16294, 
-        "Followers": 8725971, 
-        "Name": "Cinema XXI", 
-        "Scores": {
-            "Arrogant/Distant": 38, 
-            "Spacy/Valley girl": 40, 
-            "Depressed": 48, 
-            "Angry": 22, 
-            "Plugged In": 29, 
-            "Worried": 23, 
-            "Sensory": 59, 
-            "Analytic": 16, 
-            "Upbeat": 11, 
-            "In-the-moment": 38, 
-            "Personable": 9
         }
     }, 
     "@LunaMaya26": {
@@ -13476,4 +12545,55 @@
         "Followers": 20151406, 
         "Name": "zayn", 
         "Scores": {
-            "A
+            "Arrogant/Distant": 46, 
+            "Spacy/Valley girl": 76, 
+            "Depressed": 43, 
+            "Angry": 82, 
+            "Plugged In": 48, 
+            "Worried": 26, 
+            "Sensory": 75, 
+            "Analytic": 29, 
+            "Upbeat": 64, 
+            "In-the-moment": 52, 
+            "Personable": 34
+        }
+    }, 
+    "@ConnorFranta": {
+        "Following": 4423, 
+        "Tweets": 24197, 
+        "Followers": 5687846, 
+        "Name": "Connor Franta", 
+        "Scores": {
+            "Arrogant/Distant": 31, 
+            "Spacy/Valley girl": 61, 
+            "Depressed": 41, 
+            "Angry": 37, 
+            "Plugged In": 57, 
+            "Worried": 35, 
+            "Sensory": 98, 
+            "Analytic": 59, 
+            "Upbeat": 74, 
+            "In-the-moment": 65, 
+            "Personable": 70
+        }
+    }, 
+    "@BuzzFeed": {
+        "Following": 3116, 
+        "Tweets": 157205, 
+        "Followers": 3755690, 
+        "Name": "BuzzFeed", 
+        "Scores": {
+            "Arrogant/Distant": 45, 
+            "Spacy/Valley girl": 72, 
+            "Depressed": 49, 
+            "Angry": 57, 
+            "Plugged In": 33, 
+            "Worried": 27, 
+            "Sensory": 55, 
+            "Analytic": 37, 
+            "Upbeat": 34, 
+            "In-the-moment": 42, 
+            "Personable": 27
+        }
+    }
+}
