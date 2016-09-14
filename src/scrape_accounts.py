@@ -94,42 +94,52 @@ def remove_non_english_users(lookup=False):
     json.dump(db, fp, indent=4)
 
 
-def remove_non_english_by_detection(lookup=False):
+def remove_non_english_by_detection():
     # This method attempts to detect the language
     # Contained in the users tweets using the langdetect module
     # and remove non english users from the database
 
-    if lookup:
-        consumer_key = open("../keys/consumer-key.txt").read().strip()
-        consumer_secret = open("../keys/consumer-secret.txt").read().strip()
-        access_token = open("../keys/access-token.txt").read().strip()
-        access_token_secret = open("../keys/access-token-secret.txt").read().strip()
+    # Handles already looked up:
 
-        twitter = Twitter(auth=OAuth(access_token, access_token_secret, consumer_key, consumer_secret))
+    already_searched = json.load(open("../db/already-searched.json"))
+    db = json.load(open("../db/top-handles.json", 'r'))
+    non_english = json.load(open('../db/non-english-handles.json'))
 
-        db = json.load(open("../db/top-handles.json", 'r'))
+    print len(already_searched)
 
-        non_english = json.load(open('../db/non-english-handles-detection.json'))
+    consumer_key = open("../keys/consumer-key.txt").read().strip()
+    consumer_secret = open("../keys/consumer-secret.txt").read().strip()
+    access_token = open("../keys/access-token.txt").read().strip()
+    access_token_secret = open("../keys/access-token-secret.txt").read().strip()
 
-        for handle in db.keys():
+    twitter = Twitter(auth=OAuth(access_token, access_token_secret, consumer_key, consumer_secret))
 
-            # multiple passes needed for twitter rate limits
-            if handle not in non_english:
+    for handle in db.keys():
 
-                # iterate through db of handles, look up tweets and concatenate to form
-                # a large enough data set, roughly 100 tweets
+        # multiple passes needed for twitter rate limits
+        if handle not in already_searched:
 
+            # iterate through db of handles, look up tweets and concatenate to form
+            # a large enough data set, roughly 100 tweets
+
+            try:
                 info = twitter.statuses.user_timeline(screen_name=handle[1:], count=100)
                 text_data = "\n".join([txt['text'] for txt in info])
                 language = langdetect.detect(text_data)
 
+                print handle
+                already_searched.append(handle)
+
                 if language != "en":
-                    print handle + " has " + language
                     non_english.append(handle)
 
+            except TwitterHTTPError as twitter_error:
+                print "Failed at: " + handle
+                print twitter_error
+                break
 
-
-
-
-
-
+    print "Writing to file..."
+    fp = open("../db/already-searched.json", 'w')
+    json.dump(already_searched, fp, indent=4)
+    fp = open("../db/non-english-handles.json", 'w')
+    json.dump(non_english, fp, indent=4)
