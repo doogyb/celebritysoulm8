@@ -1,4 +1,5 @@
 keys/*
 .idea/*
 *.pyc
-log/*
+log/
+log/log.txt
