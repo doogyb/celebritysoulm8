@@ -1,5 +1,6 @@
 from twitter import *
 import pprint
+import analyse_words
 
 
 def auth_twitter():
@@ -19,6 +20,25 @@ def listen():
             if 'entities' in msg:
                 pprint.pprint(msg)
                 print msg['entities']['hashtags']
+                print msg['in_reply_to_screen_name']
+                print
 
-                print 'matchme' in [hashtag['text'] for hashtag in msg['entities']['hashtags']]
+                print 'matchme' in [hashtag['text'].lower() for hashtag in msg['entities']['hashtags']]
+
+
+def reply(handle, status_id):
+
+    twitter = Twitter(auth=auth_twitter())
+    user_score = analyse_words.query(handle)
+
+    reply_content=""
+    try:
+        twitter.statuses.update(status=reply_content, in_reply_to_status_id=status_id)
+
+    except TwitterHTTPError as twitter_error:
+
+        err_str = "Could not send reply: ", reply_content
+        err_str += str(twitter_error)
+
+        # TODO log the err_str
 

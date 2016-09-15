@@ -34,6 +34,14 @@ def find_most_similar():
     return pair
 
 
+def find_most_similar_by_handle(handle):
+    db = json.load(open("../db/english-users.json"))
+    most_similar = 0
+    for key in db.keys():
+        pass
+
+
+
 def db_as_list():
     db = json.load(open("../db/comparisons.json"))
     # save the dictionary format as a list of triples, with

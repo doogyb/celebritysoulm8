@@ -164,7 +164,6 @@ def remove_non_english_by_detection():
                 print twitter_error
                 print "\n\n\n Requests made: " + str(requests)
 
-
     print "Writing to file..."
     fp = open("../db/already-searched.json", 'w')
     json.dump(already_searched, fp, indent=4)
@@ -208,9 +207,6 @@ def remove_users():
 
     fp = open("english-users.json", 'w')
     json.dump(all_handles, fp, indent=4)
-
-remove_non_english_by_detection()
-remove_users()
 
 
 
