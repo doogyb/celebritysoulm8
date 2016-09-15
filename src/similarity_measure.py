@@ -24,5 +24,3 @@ def difference(score1, score2):
         diff += score1[i] * score2[i]
 
     return diff
-
-

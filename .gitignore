@@ -1,3 +1,4 @@
 keys/*
 .idea/*
 *.pyc
+log/*

@@ -12,7 +12,7 @@ def global_comparison(write_to_file=False):
         rankings[handle] = {}
     for handle, other_handle in itertools.combinations(db.keys(), 2):
         rankings[handle][other_handle] = similarity_measure.\
-            difference(db[handle]["Scores"], db[other_handle]["Scores"])
+            difference(db[handle]["scores"], db[other_handle]["scores"])
 
     if write_to_file:
         fp = open("../db/comparisons.json", 'w')
@@ -22,24 +22,19 @@ def global_comparison(write_to_file=False):
     return rankings
 
 
-def find_most_similar():
-    db = json.load(open("../db/comparisons.json"))
-    most_similar = 0
-    for key in db.keys():
-        for name, measure in zip(db[key].keys(), db[key].values()):
-            if measure > most_similar:
-                most_similar = measure
-                pair = name + " : " + key + " ->  " + str(measure)
-
-    return pair
-
-
-def find_most_similar_by_handle(handle):
+def find_most_similar(score):
     db = json.load(open("../db/english-users.json"))
-    most_similar = 0
-    for key in db.keys():
-        pass
 
+    max_score = 0
+    max_handle = ""
+
+    for handle, handle_values in zip(db.keys(), db.values()):
+        similarity_score = similarity_measure.difference(score, handle_values['scores'])
+        if similarity_score > max_score:
+            max_score = similarity_score
+            max_handle = handle
+
+    return max_handle
 
 
 def db_as_list():
@@ -72,5 +67,3 @@ def order_by_similarity(write_to_file=False):
 def recalculate_lists():
     global_comparison(True)
     order_by_similarity(True)
-
-recalculate_lists()
