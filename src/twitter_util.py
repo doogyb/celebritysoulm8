@@ -1,7 +1,7 @@
-from twitterbot import auth_twitter
 from twitter import *
 import time
 import os
+import pprint
 
 
 def wait_time(call):
@@ -23,4 +23,24 @@ def block_until_reset(call):
         time.sleep(1)
 
 
+def get_url_image_of_user(handle):
 
+    twitter = Twitter(auth=auth_twitter())
+    user = twitter.users.lookup(screen_name=handle)
+    #pprint.pprint(user)
+
+    return str(user[0]['profile_image_url'])[:-11] + str(user[0]['profile_image_url'])[-4:]
+
+
+def auth_twitter():
+
+    consumer_key = open("../keys/consumer-key.txt").read().strip()
+    consumer_secret = open("../keys/consumer-secret.txt").read().strip()
+    access_token = open("../keys/access-token.txt").read().strip()
+    access_token_secret = open("../keys/access-token-secret.txt").read().strip()
+
+    return OAuth(access_token, access_token_secret, consumer_key, consumer_secret)
+
+
+if __name__ == "__main__":
+    pass

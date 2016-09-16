@@ -1,17 +1,11 @@
-from twitter import *
 import pprint
+from datetime import datetime
+from twitter import *
+
 import analyse_words
 import cross_comparison
-
-
-def auth_twitter():
-
-    consumer_key = open("../keys/consumer-key.txt").read().strip()
-    consumer_secret = open("../keys/consumer-secret.txt").read().strip()
-    access_token = open("../keys/access-token.txt").read().strip()
-    access_token_secret = open("../keys/access-token-secret.txt").read().strip()
-
-    return OAuth(access_token, access_token_secret, consumer_key, consumer_secret)
+from twitter_util import auth_twitter, get_url_image_of_user
+import urllib, os.path
 
 
 def listen():
@@ -33,29 +27,47 @@ def reply_with_celeb_match(msg):
     user_score = analyse_words.query(handle)
     user_match = cross_comparison.find_most_similar(user_score)
 
-    reply_content = "@" + handle + " you have matched with: " + user_match
+    reply_content = "testing @" + handle + " you have matched with: " + user_match
+
+    if not os.path.isfile("../img/" + user_match[1:] + ".jpg"):
+        urllib.urlretrieve(get_url_image_of_user(user_match[1:]), "../img/" + user_match[1:] + ".jpg")
+
+    profile_img = "../img/" + user_match[1:] + ".jpg"
 
     try:
-        twitter.statuses.update(status=reply_content, in_reply_to_status_id=status_id)
 
-        log_text = "----------------------------------------------------"
+        # Uploading images requires special domain
+        t_upload = Twitter(domain='upload.twitter.com', auth=auth_twitter())
+        media_id = t_upload.media.upload(media=open(profile_img, 'rb').read())["media_id_string"]
+        twitter.statuses.update(status=reply_content, in_reply_to_status_id=status_id, media_ids=media_id)
+
+        log_text = "\n\n----------------------------------------------------\n\n"
+        log_text += str(datetime.now()) + "\n\n"
         log_text += "\n\n" + handle + " tried to reply with text: " "\n\n"
         log_text += msg['text']
         log_text += "\n\nReply given was: " + reply_content
-        log_text += "----------------------------------------------------"
+        log_text += "\nImage uploaded: ", profile_img
+        log_text += "\n\n----------------------------------------------------\n\n"
+
+        pprint.pprint(msg)
 
         with open("../log/log.txt", 'a') as logfile:
             logfile.write("\n\n" + log_text)
 
     except TwitterHTTPError as twitter_error:
 
-        err_str = "----------------------------------------------------"
-        err_str += "Could not send reply: ", reply_content
+        print twitter_error
+        err_str = "----------------------------------------------------\n\n"
+        err_str += str(datetime.now()) + "\n\n"
+        err_str += "Could not send reply: ", str(reply_content)
         err_str += str(twitter_error)
-        err_str += "----------------------------------------------------"
+        err_str += "----------------------------------------------------\n\n"
 
         with open("../log/log.txt", 'a') as logfile:
             logfile.write("\n\n" + err_str)
 
-listen()
+
+if __name__ == "__main__":
+    listen()
+
 

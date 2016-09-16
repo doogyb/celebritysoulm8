@@ -4,9 +4,8 @@ import bs4
 import json
 from twitter import *
 import langdetect
-import twitter_util
+from twitter_util import auth_twitter
 
-from twitterbot import auth_twitter
 
 # Scraping the handles of the top 1000 followers
 # Pages are separated by groups of 100 users

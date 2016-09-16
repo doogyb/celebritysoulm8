@@ -2,4 +2,4 @@ keys/*
 .idea/*
 *.pyc
 log/
-log/log.txt
+img/
