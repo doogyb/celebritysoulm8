@@ -23,7 +23,7 @@ def global_comparison(write_to_file=False):
 
 
 def find_most_similar(score):
-    db = json.load(open("../db/english-users.json"))
+    db = json.load(open("../db/handles/english-users.json"))
 
     max_score = 0
     max_handle = ""

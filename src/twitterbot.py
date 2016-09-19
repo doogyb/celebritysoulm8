@@ -6,6 +6,7 @@ import analyse_words
 import cross_comparison
 from twitter_util import auth_twitter, get_url_image_of_user
 import urllib, os.path
+import json
 
 
 def listen():
@@ -27,6 +28,17 @@ def reply_with_celeb_match(msg):
     user_score = analyse_words.query(handle)
     user_match = cross_comparison.find_most_similar(user_score)
 
+    with open('../db/twitter/user_queries.json') as f:
+        user_queries = json.load(f)
+
+    if [handle, user_match] in user_queries:
+        print "User has already matched"
+        return
+    else:
+        with open('../db/twitter/user_queries.json', 'w') as f:
+            user_queries.append((handle, user_match))
+            json.dump(user_queries, f, indent=4)
+
     reply_content = "testing @" + handle + " you have matched with: " + user_match
 
     if not os.path.isfile("../img/" + user_match[1:] + ".jpg"):
@@ -46,7 +58,7 @@ def reply_with_celeb_match(msg):
         log_text += "\n\n" + handle + " tried to reply with text: " "\n\n"
         log_text += msg['text']
         log_text += "\n\nReply given was: " + reply_content
-        log_text += "\nImage uploaded: ", profile_img
+        log_text += "\nImage uploaded: " + profile_img
         log_text += "\n\n----------------------------------------------------\n\n"
 
         pprint.pprint(msg)
