@@ -15,9 +15,19 @@ def listen():
     for msg in twitter_userstream.user():
             if 'entities' in msg:
 
-                if msg['in_reply_to_screen_name'] == 'celebritysoulm8' and 'matchme' in [hashtag['text'].lower() for hashtag in msg['entities']['hashtags']]:
+                if msg['in_reply_to_screen_name'] == 'celebritysoulm8' and \
+                   'matchme' in [hashtag['text'].lower() for hashtag in msg['entities']['hashtags']]:
 
                     reply_with_celeb_match(msg)
+
+                elif msg['in_reply_to_screen_name'] == 'celebritysoulm8' and \
+                     'rateus' in [hashtag['text'].lower() for hashtag in msg['entities']['hashtags']] and \
+                     len(msg['entities']['user_mentions']) == 2:
+
+                    reply_with_user_rating(msg)
+
+                else:
+                    print pprint.pprint(msg)
 
 
 def reply_with_celeb_match(msg):
@@ -77,6 +87,17 @@ def reply_with_celeb_match(msg):
 
         with open("../log/log.txt", 'a') as logfile:
             logfile.write("\n\n" + err_str)
+
+
+def reply_with_user_rating(msg):
+    handle = msg['user']['screen_name']
+    other_handle = ""
+    for h in msg['entities']['user_mentions']:
+        if h['screen_name'] != 'celebritysoulm8':
+            other_handle = h['screen_name']
+
+    print other_handle
+
 
 
 if __name__ == "__main__":
