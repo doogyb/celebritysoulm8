@@ -32,6 +32,18 @@ def get_url_image_of_user(handle):
     return str(user[0]['profile_image_url'])[:-11] + str(user[0]['profile_image_url'])[-4:]
 
 
+def delete_all_tweets():
+
+    twitter = Twitter(auth=auth_twitter())
+    timeline = twitter.statuses.home_timeline()
+    print len(timeline)
+
+    for tweet in timeline:
+        print tweet['id']
+        print "Destroying: ", tweet['text']
+        twitter.statuses.destroy(id=tweet['id'])
+
+
 def auth_twitter():
 
     consumer_key = open("../keys/consumer-key.txt").read().strip()
@@ -43,4 +55,4 @@ def auth_twitter():
 
 
 if __name__ == "__main__":
-    pass
+    delete_all_tweets()
