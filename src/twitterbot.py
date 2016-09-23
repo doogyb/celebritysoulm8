@@ -28,7 +28,14 @@ def listen():
                     reply_with_user_rating(msg)
 
                 else:
+                    print "Tried but did not work for some reason:\n\n\n "
+                    print "Message: " + msg['text'] + "\n\n\n"
                     print pprint.pprint(msg)
+
+            else:
+                # print "Tried but did not work for some reason:\n\n\n "
+                # print "Message: " + msg['text'] + "\n\n\n"
+                print pprint.pprint(msg)
 
 
 def reply_with_celeb_match(msg):
@@ -50,11 +57,7 @@ def reply_with_celeb_match(msg):
             json.dump(user_queries, f, indent=4)
 
     reply_content = "@" + handle + " you have matched with: " + user_match
-
-    if not os.path.isfile("../img/" + user_match[1:] + ".jpg"):
-        urllib.urlretrieve(get_url_image_of_user(user_match[1:]), "../img/" + user_match[1:] + ".jpg")
-
-    profile_img = "../img/" + user_match[1:] + ".jpg"
+    profile_img = download_user_image(user_match[1:])
 
     try:
 
@@ -100,22 +103,35 @@ def reply_with_user_rating(msg):
         log_err(twitter_error, reply_content)
 
 
+def download_user_image(handle):
+
+    if not os.path.isfile("../img/" + handle + ".jpg"):
+        urllib.urlretrieve(get_url_image_of_user(handle), "../img/" + handle + ".jpg")
+
+    profile_img = "../img/" + handle + ".jpg"
+    return profile_img
+
+
 def log(msg, reply_content, profile_img=None):
 
-    handle = msg['user']['screen_name']
-    log_text = "\n\n----------------------------------------------------\n\n"
-    log_text += str(datetime.now()) + "\n\n"
-    log_text += "\n\n" + handle + " tried to reply with text: " "\n\n"
-    log_text += msg['text']
-    log_text += "\n\nReply given was: " + reply_content
-    if profile_img:
-        log_text += "\nImage uploaded: " + profile_img
-    log_text += "\n\n----------------------------------------------------\n\n"
+    try:
+        handle = msg['user']['screen_name']
+        log_text = "\n\n----------------------------------------------------\n\n"
+        log_text += str(datetime.now()) + "\n\n"
+        log_text += "\n\n" + handle + " tried to reply with text: " "\n\n"
+        log_text += msg['text']
+        log_text += "\n\nReply given was: " + str(reply_content)
+        if profile_img:
+            log_text += "\nImage uploaded: " + profile_img
+        log_text += "\n\n----------------------------------------------------\n\n"
 
-    pprint.pprint(msg)
+        pprint.pprint(msg)
 
-    with open("../log/log.txt", 'a') as logfile:
-        logfile.write("\n\n" + log_text)
+        with open("../log/log.txt", 'a') as logfile:
+            logfile.write("\n\n" + log_text)
+    except TypeError as err:
+        print err
+        print "Can't do it captain!"
 
 
 def log_err(twitter_error, reply_content):
