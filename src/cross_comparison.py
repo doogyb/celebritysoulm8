@@ -8,15 +8,15 @@ def global_comparison(write_to_file=False):
     db = json.load(open("../db/english-users.json"))
     rankings = {}
 
-    for handle in db.keys():
+    for handle in list(db.keys()):
         rankings[handle] = {}
-    for handle, other_handle in itertools.combinations(db.keys(), 2):
+    for handle, other_handle in itertools.combinations(list(db.keys()), 2):
         rankings[handle][other_handle] = similarity_measure.\
             difference(db[handle]["scores"], db[other_handle]["scores"])
 
     if write_to_file:
         fp = open("../db/comparisons.json", 'w')
-        print "writing dictionary comparisons to file"
+        print("writing dictionary comparisons to file")
         json.dump(rankings, fp, indent=4)
 
     return rankings
@@ -28,7 +28,7 @@ def find_most_similar(score):
     max_score = 0
     max_handle = ""
 
-    for handle, handle_values in zip(db.keys(), db.values()):
+    for handle, handle_values in zip(list(db.keys()), list(db.values())):
         similarity_score = similarity_measure.difference(score, handle_values['scores'])
         if similarity_score > max_score:
             max_score = similarity_score
@@ -44,8 +44,8 @@ def db_as_list():
 
     list_form = []
 
-    for key in db.keys():
-        for name, measure in zip(db[key].keys(), db[key].values()):
+    for key in list(db.keys()):
+        for name, measure in zip(list(db[key].keys()), list(db[key].values())):
             list_form.append((key, name, measure))
 
     return list_form
@@ -59,7 +59,7 @@ def order_by_similarity(write_to_file=False):
     if write_to_file:
         fp = open("../db/ordered_comparisons.json", 'w')
         json.dump(list_form, fp, indent=4)
-        print "Writing ordered list to file"
+        print("Writing ordered list to file")
 
     return list_form
 

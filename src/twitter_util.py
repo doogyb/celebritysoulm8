@@ -19,7 +19,7 @@ def block_until_reset(call):
 
         m, s = divmod(reset - time.time(), 60)
         os.system('clear')
-        print "%02d:%02d" % (m, s)
+        print(("%02d:%02d" % (m, s)))
         time.sleep(1)
 
 
@@ -36,11 +36,11 @@ def delete_all_tweets():
 
     twitter = Twitter(auth=auth_twitter())
     timeline = twitter.statuses.home_timeline()
-    print len(timeline)
+    print((len(timeline)))
 
     for tweet in timeline:
-        print tweet['id']
-        print "Destroying: ", tweet['text']
+        print((tweet['id']))
+        print(("Destroying: ", tweet['text']))
         twitter.statuses.destroy(id=tweet['id'])
 
 
@@ -55,4 +55,5 @@ def auth_twitter():
 
 
 if __name__ == "__main__":
-    delete_all_tweets()
+    #  delete_all_tweets()
+    pass

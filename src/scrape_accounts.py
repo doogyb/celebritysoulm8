@@ -19,7 +19,7 @@ def scrape():
         else:
             url = "http://twittercounter.com/pages/100/" + str(i*100)
 
-        print url
+        print(url)
         response = requests.get(url)
         html = response.text
         soup = BeautifulSoup(html, "html.parser")
@@ -39,14 +39,14 @@ def scrape():
                     tweets = child.find_all("div", class_="num-following inactive")[1].\
                         find("span", class_="num").string.replace(",", "")
                 except:
-                    print "Can't match"
+                    print("Can't match")
 
                 if len(handle) > 0:
                     # save to dictionary
                     users[handle[0].string] = {"Name": name[0].string, "Following": int(following),
                                                "Followers": int(followers), "Tweets": int(tweets)}
 
-    print len(users)
+    print(len(users))
     with open("../db/top-handles.json", "w") as fp:
         json.dump(users, fp, indent=4)
 
@@ -68,13 +68,13 @@ def remove_non_english_users(lookup=False):
 
         for i in range(0, 1000, 99):
             try:
-                users = twitter.users.lookup(screen_name=",".join([handle[1:] for handle in db.keys()[i:i+99]]))
+                users = twitter.users.lookup(screen_name=",".join([handle[1:] for handle in list(db.keys())[i:i+99]]))
             except:
-                print "Messed up with: ", ",".join([handle[1:] for handle in db.keys()[i:i+99]])
+                print("Messed up with: ", ",".join([handle[1:] for handle in list(db.keys())[i:i+99]]))
 
             for user in users:
                 if user['lang'] != "en" and user['lang'] != "en-gb":
-                    print "Removing " + user['screen_name'] + " : " + user['lang']
+                    print("Removing " + user['screen_name'] + " : " + user['lang'])
                     non_english.append("@" + user['screen_name'])
 
         fp = open("../db/non-english-handles.json", 'w')
@@ -84,7 +84,7 @@ def remove_non_english_users(lookup=False):
     db = json.load(open("../db/top-handles.json"))
     for user in non_english:
         if user not in db:
-            print "Key error with " + user
+            print("Key error with " + user)
         else:
             db.pop(user)
 
@@ -108,9 +108,9 @@ def remove_non_english_by_detection():
 
     twitter_requests = twitter.application.rate_limit_status(resources='statuses')
     twitter_requests = int(twitter_requests['resources']['statuses']['/statuses/user_timeline']['remaining'])
-    print "Requests available: ", twitter_requests,
+    print("Requests available: ", twitter_requests, end=' ')
 
-    for handle in db.keys():
+    for handle in list(db.keys()):
 
         # multiple passes needed for twitter rate limits
 
@@ -131,8 +131,8 @@ def remove_non_english_by_detection():
                 try:
                     languages = langdetect.detect_langs(text_data)
                 except:
-                    print "Failed to detect language at: " + handle
-                    print text_data
+                    print("Failed to detect language at: " + handle)
+                    print(text_data)
 
                 already_searched.append(handle)
 
@@ -156,14 +156,14 @@ def remove_non_english_by_detection():
 
                 if has_other_than_english(languages) or len(languages) > 2:
                     non_english.append(handle)
-                    print "Non english: " + handle + " ---> " + str(languages)
+                    print("Non english: " + handle + " ---> " + str(languages))
 
             except TwitterHTTPError as twitter_error:
-                print "Failed at: " + handle
-                print twitter_error
-                print "\n\n\n Requests made: " + str(requests)
+                print("Failed at: " + handle)
+                print(twitter_error)
+                print("\n\n\n Requests made: " + str(requests))
 
-    print "Writing to file..."
+    print("Writing to file...")
     fp = open("../db/already-searched.json", 'w')
     json.dump(already_searched, fp, indent=4)
     fp = open("../db/non-english-handles.json", 'w')

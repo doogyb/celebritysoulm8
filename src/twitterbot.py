@@ -5,7 +5,7 @@ from twitter import *
 import analyse_words
 import cross_comparison
 from twitter_util import auth_twitter, get_url_image_of_user
-import urllib, os.path
+import urllib.request, urllib.parse, urllib.error, os.path
 import json
 import similarity_measure
 
@@ -28,14 +28,14 @@ def listen():
                     reply_with_user_rating(msg)
 
                 else:
-                    print "Tried but did not work for some reason:\n\n\n "
-                    print "Message: " + msg['text'] + "\n\n\n"
-                    print pprint.pprint(msg)
+                    print("Tried but did not work for some reason:\n\n\n ")
+                    print("Message: " + msg['text'] + "\n\n\n")
+                    print(pprint.pprint(msg))
 
             else:
                 # print "Tried but did not work for some reason:\n\n\n "
                 # print "Message: " + msg['text'] + "\n\n\n"
-                print pprint.pprint(msg)
+                print(pprint.pprint(msg))
 
 
 def reply_with_celeb_match(msg):
@@ -49,7 +49,7 @@ def reply_with_celeb_match(msg):
         user_queries = json.load(f)
 
     if [handle, user_match] in user_queries:
-        print "User has already matched"
+        print("User has already matched")
         return
     else:
         with open('../db/twitter/user_queries.json', 'w') as f:
@@ -106,7 +106,7 @@ def reply_with_user_rating(msg):
 def download_user_image(handle):
 
     if not os.path.isfile("../img/" + handle + ".jpg"):
-        urllib.urlretrieve(get_url_image_of_user(handle), "../img/" + handle + ".jpg")
+        urllib.request.urlretrieve(get_url_image_of_user(handle), "../img/" + handle + ".jpg")
 
     profile_img = "../img/" + handle + ".jpg"
     return profile_img
@@ -130,13 +130,13 @@ def log(msg, reply_content, profile_img=None):
         with open("../log/log.txt", 'a') as logfile:
             logfile.write("\n\n" + log_text)
     except TypeError as err:
-        print err
-        print "Can't do it captain!"
+        print(err)
+        print("Can't do it captain!")
 
 
 def log_err(twitter_error, reply_content):
 
-    print twitter_error
+    print(twitter_error)
     err_str = "----------------------------------------------------\n\n"
     err_str += str(datetime.now()) + "\n\n"
     err_str += "Could not send reply: ", str(reply_content)

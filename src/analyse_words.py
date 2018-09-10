@@ -18,12 +18,12 @@ def query(handle):
     for td in tds:
         int_scores.append(int(td.string.encode('ascii', 'ignore')))
 
-    scores = dict(zip(styles, int_scores))
+    scores = dict(list(zip(styles, int_scores)))
     return scores
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print "Expected argument, please enter a valid twitter handle"
+        print("Expected argument, please enter a valid twitter handle")
         exit()
 
-    query(sys.argv[1])
+    print((query(sys.argv[1])))
