@@ -3,7 +3,7 @@ import json
 
 
 def assign_scores():
-    db = json.load(open("../db/top-handles.json", 'r'))
+    db = json.load(open("db/top-handles.json", 'r'))
     i = 0
     for handle in list(db.keys()):
         if not db[handle]['Scores']:
@@ -12,7 +12,7 @@ def assign_scores():
             if not scores:
                 print("Exiting loop now")
                 break
-            print(handle, scores)
+            print((handle, scores))
             db[handle]['Scores'] = scores
             print(i)
             i += 1
@@ -29,4 +29,4 @@ def count_assigned_scores():
     return len([x for x in list(db.values()) if not x['Scores']])
 
 
-print(count_assigned_scores())
+print((count_assigned_scores()))

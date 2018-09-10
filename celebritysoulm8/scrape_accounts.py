@@ -47,7 +47,7 @@ def scrape():
                                                "Followers": int(followers), "Tweets": int(tweets)}
 
     print(len(users))
-    with open("../db/top-handles.json", "w") as fp:
+    with open("db/top-handles.json", "w") as fp:
         json.dump(users, fp, indent=4)
 
 
@@ -59,7 +59,7 @@ def remove_non_english_users(lookup=False):
 
         twitter = Twitter(auth=auth_twitter())
 
-        db = json.load(open("../db/top-handles.json", 'r'))
+        db = json.load(open("db/top-handles.json", 'r'))
 
         # iterate over groups of 99 in order to make less requests, then
         # search for language and remove if not en
@@ -77,18 +77,18 @@ def remove_non_english_users(lookup=False):
                     print("Removing " + user['screen_name'] + " : " + user['lang'])
                     non_english.append("@" + user['screen_name'])
 
-        fp = open("../db/non-english-handles.json", 'w')
+        fp = open("db/non-english-handles.json", 'w')
         json.dump(non_english, fp, indent=4)
 
-    non_english = json.load(open("../db/non-english-handles.json"))
-    db = json.load(open("../db/top-handles.json"))
+    non_english = json.load(open("db/non-english-handles.json"))
+    db = json.load(open("db/top-handles.json"))
     for user in non_english:
         if user not in db:
             print("Key error with " + user)
         else:
             db.pop(user)
 
-    fp = open("../db/temp.json", 'w')
+    fp = open("db/temp.json", 'w')
     json.dump(db, fp, indent=4)
 
 
@@ -97,12 +97,12 @@ def remove_non_english_by_detection():
     # Contained in the users tweets using the langdetect module
     # and remove non english users from the database
 
-    db = json.load(open("../db/all-handles.json", 'r'))
+    db = json.load(open("db/all-handles.json", 'r'))
 
     # Handles already looked up:
 
-    already_searched = json.load(open("../db/already-searched.json"))
-    non_english = json.load(open('../db/non-english-handles.json'))
+    already_searched = json.load(open("db/already-searched.json"))
+    non_english = json.load(open('db/non-english-handles.json'))
 
     twitter = Twitter(auth=auth_twitter())
 
@@ -164,9 +164,9 @@ def remove_non_english_by_detection():
                 print("\n\n\n Requests made: " + str(requests))
 
     print("Writing to file...")
-    fp = open("../db/already-searched.json", 'w')
+    fp = open("db/already-searched.json", 'w')
     json.dump(already_searched, fp, indent=4)
-    fp = open("../db/non-english-handles.json", 'w')
+    fp = open("db/non-english-handles.json", 'w')
     json.dump(non_english, fp, indent=4)
 
 
@@ -198,31 +198,11 @@ def language_probability(languages, is_lang='en'):
 
 
 def remove_users():
-    non_english_users = json.load(open("../db/non-english-handles.json"))
-    all_handles = json.load(open("../db/all-handles.json"))
+    non_english_users = json.load(open("db/non-english-handles.json"))
+    all_handles = json.load(open("db/all-handles.json"))
     for handle in non_english_users:
         if handle in all_handles:
             all_handles.pop(handle)
 
     fp = open("english-users.json", 'w')
     json.dump(all_handles, fp, indent=4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

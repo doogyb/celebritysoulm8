@@ -16,8 +16,8 @@ def listen():
     for msg in twitter_userstream.user():
             if 'entities' in msg:
 
-                if msg['in_reply_to_screen_name'] == 'celebritysoulm8' and \
-                   'matchme' in [hashtag['text'].lower() for hashtag in msg['entities']['hashtags']]:
+                if (msg['in_reply_to_screen_name'] == 'celebritysoulm8' and
+                   'matchme' in [hashtag['text'].lower() for hashtag in msg['entities']['hashtags']]):
 
                     reply_with_celeb_match(msg)
 
@@ -45,14 +45,14 @@ def reply_with_celeb_match(msg):
     user_score = analyse_words.query(handle)
     user_match = cross_comparison.find_most_similar(user_score)
 
-    with open('../db/twitter/user_queries.json') as f:
+    with open('db/twitter/user_queries.json') as f:
         user_queries = json.load(f)
 
     if [handle, user_match] in user_queries:
         print("User has already matched")
         return
     else:
-        with open('../db/twitter/user_queries.json', 'w') as f:
+        with open('db/twitter/user_queries.json', 'w') as f:
             user_queries.append((handle, user_match))
             json.dump(user_queries, f, indent=4)
 
@@ -105,10 +105,10 @@ def reply_with_user_rating(msg):
 
 def download_user_image(handle):
 
-    if not os.path.isfile("../img/" + handle + ".jpg"):
-        urllib.request.urlretrieve(get_url_image_of_user(handle), "../img/" + handle + ".jpg")
+    if not os.path.isfile("img/" + handle + ".jpg"):
+        urllib.request.urlretrieve(get_url_image_of_user(handle), "img/" + handle + ".jpg")
 
-    profile_img = "../img/" + handle + ".jpg"
+    profile_img = "img/" + handle + ".jpg"
     return profile_img
 
 
@@ -127,7 +127,7 @@ def log(msg, reply_content, profile_img=None):
 
         pprint.pprint(msg)
 
-        with open("../log/log.txt", 'a') as logfile:
+        with open("log/log.txt", 'a') as logfile:
             logfile.write("\n\n" + log_text)
     except TypeError as err:
         print(err)
@@ -143,11 +143,9 @@ def log_err(twitter_error, reply_content):
     err_str += str(twitter_error)
     err_str += "----------------------------------------------------\n\n"
 
-    with open("../log/log.txt", 'a') as logfile:
+    with open("log/log.txt", 'a') as logfile:
         logfile.write("\n\n" + err_str)
 
 
 if __name__ == "__main__":
     listen()
-
-

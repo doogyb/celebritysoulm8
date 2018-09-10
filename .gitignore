@@ -3,3 +3,4 @@ keys/*
 *.pyc
 log/
 img/
+*.bak

@@ -15,7 +15,7 @@ def global_comparison(write_to_file=False):
             difference(db[handle]["scores"], db[other_handle]["scores"])
 
     if write_to_file:
-        fp = open("../db/comparisons.json", 'w')
+        fp = open("db/comparisons.json", 'w')
         print("writing dictionary comparisons to file")
         json.dump(rankings, fp, indent=4)
 
@@ -23,7 +23,7 @@ def global_comparison(write_to_file=False):
 
 
 def find_most_similar(score):
-    db = json.load(open("../db/handles/english-users.json"))
+    db = json.load(open("db/handles/english-users.json"))
 
     max_score = 0
     max_handle = ""
@@ -38,7 +38,7 @@ def find_most_similar(score):
 
 
 def db_as_list():
-    db = json.load(open("../db/comparisons.json"))
+    db = json.load(open("db/comparisons.json"))
     # save the dictionary format as a list of triples, with
     # handles as first pair and corresponding score as second
 
@@ -57,7 +57,7 @@ def order_by_similarity(write_to_file=False):
     list_form.sort(key=lambda x: x[2])
 
     if write_to_file:
-        fp = open("../db/ordered_comparisons.json", 'w')
+        fp = open("db/ordered_comparisons.json", 'w')
         json.dump(list_form, fp, indent=4)
         print("Writing ordered list to file")
 
