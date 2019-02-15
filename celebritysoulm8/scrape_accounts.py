@@ -4,7 +4,7 @@ import bs4
 import json
 from twitter import *
 import langdetect
-from twitter_util import auth_twitter
+from . import twitter_util
 
 
 # Scraping the handles of the top 1000 followers
@@ -104,7 +104,7 @@ def remove_non_english_by_detection():
     already_searched = json.load(open("db/already-searched.json"))
     non_english = json.load(open('db/non-english-handles.json'))
 
-    twitter = Twitter(auth=auth_twitter())
+    twitter = Twitter(auth=twitter_util.auth_twitter())
 
     twitter_requests = twitter.application.rate_limit_status(resources='statuses')
     twitter_requests = int(twitter_requests['resources']['statuses']['/statuses/user_timeline']['remaining'])
