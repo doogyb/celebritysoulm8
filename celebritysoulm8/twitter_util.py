@@ -1,6 +1,7 @@
 from twitter import *
 import time
 import os
+import twitter
 import pprint
 
 
@@ -26,11 +27,13 @@ def block_until_reset(call):
 
 def get_url_image_of_user(handle):
 
-    twitter = Twitter(auth=auth_twitter())
-    user = twitter.users.lookup(screen_name=handle)
+    t = twitter.Api(*auth_twitter())
+    user = t.UsersLookup(screen_name=handle)
+    print(user[0].profile_image_url.replace("_normal", ""))
     # pprint.pprint(user)
+    return user[0].profile_image_url.replace("_normal", "")
 
-    return str(user[0]['profile_image_url'])[:-11] + str(user[0]['profile_image_url'])[-4:]
+    # return str(user[0]['profile_image_url'])[:-11] + str(user[0]['profile_image_url'])[-4:]
 
 
 def delete_all_tweets():
@@ -53,7 +56,8 @@ def auth_twitter():
     access_token_secret = open(
         "keys/access-token-secret.txt").read().strip()
 
-    return OAuth(access_token, access_token_secret, consumer_key, consumer_secret)
+    return consumer_key, consumer_secret, access_token, access_token_secret
+    # return OAuth(access_token, access_token_secret, consumer_key, consumer_secret)
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-import similarity_measure
+import celebritysoulm8.similarity_measure as similarity_measure
 import json
 import itertools
 

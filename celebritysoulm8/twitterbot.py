@@ -2,19 +2,28 @@ import pprint
 from datetime import datetime
 from twitter import *
 
-import analyse_words
-import cross_comparison
-from twitter_util import auth_twitter, get_url_image_of_user
-import urllib.request, urllib.parse, urllib.error, os.path
+from . import analyse_words
+from . import cross_comparison
+from .twitter_util import auth_twitter, get_url_image_of_user
+import urllib.request
+import urllib.parse
+import urllib.error
+import os.path
 import json
-import similarity_measure
+from . import similarity_measure
+import twitter
+from pprint import pprint
 
 
 def listen():
 
-    twitter_userstream = TwitterStream(auth=auth_twitter(), domain='userstream.twitter.com')
-    for msg in twitter_userstream.user():
+    # twitter_userstream = TwitterStream(auth=auth_twitter(), domain='stream.twitter.com')
+    t = twitter.Api(*auth_twitter())
+    for msg in t.GetStreamFilter(follow=["773917260050272258"]):
+
             if 'entities' in msg:
+                pprint(msg)
+                print(msg['entities'])
 
                 if (msg['in_reply_to_screen_name'] == 'celebritysoulm8' and
                    'matchme' in [hashtag['text'].lower() for hashtag in msg['entities']['hashtags']]):
@@ -28,9 +37,10 @@ def listen():
                     reply_with_user_rating(msg)
 
                 else:
-                    print("Tried but did not work for some reason:\n\n\n ")
-                    print("Message: " + msg['text'] + "\n\n\n")
-                    print(pprint.pprint(msg))
+                    print("Not for us")
+                    # print("Tried but did not work for some reason:\n\n\n ")
+                    # print("Message: " + msg['text'] + "\n\n\n")
+                    # print(pprint.pprint(msg))
 
             else:
                 # print "Tried but did not work for some reason:\n\n\n "
@@ -45,33 +55,21 @@ def reply_with_celeb_match(msg):
     user_score = analyse_words.query(handle)
     user_match = cross_comparison.find_most_similar(user_score)
 
-    with open('db/twitter/user_queries.json') as f:
-        user_queries = json.load(f)
-
-    if [handle, user_match] in user_queries:
-        print("User has already matched")
-        return
-    else:
-        with open('db/twitter/user_queries.json', 'w') as f:
-            user_queries.append((handle, user_match))
-            json.dump(user_queries, f, indent=4)
+    # with open('db/twitter/user_queries.json') as f:
+    #     user_queries = json.load(f)
+    #
+    # if [handle, user_match] in user_queries:
+    #     print("User has already matched")
+    #     return
+    # else:
+    #     with open('db/twitter/user_queries.json', 'w') as f:
+    #         user_queries.append((handle, user_match))
+    #         json.dump(user_queries, f, indent=4)
 
     reply_content = "@" + handle + " you have matched with: " + user_match
     profile_img = download_user_image(user_match[1:])
-
-    try:
-
-        twitter = Twitter(auth=auth_twitter())
-
-        # Uploading images requires special domain
-        t_upload = Twitter(domain='upload.twitter.com', auth=auth_twitter())
-        media_id = t_upload.media.upload(media=open(profile_img, 'rb').read())["media_id_string"]
-        twitter.statuses.update(status=reply_content, in_reply_to_status_id=status_id, media_ids=media_id)
-
-        log(msg, reply_content, profile_img)
-
-    except TwitterHTTPError as twitter_error:
-        log_err(twitter_error, reply_content)
+    t = twitter.Api(*auth_twitter())
+    t.PostUpdate(reply_content, media=open(profile_img, 'rb'))
 
 
 def reply_with_user_rating(msg):
