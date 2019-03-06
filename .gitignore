@@ -2,5 +2,5 @@ keys/*
 .idea/*
 *.pyc
 log/
-img/
+img/*
 *.bak
