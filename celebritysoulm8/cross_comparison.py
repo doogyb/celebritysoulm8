@@ -23,12 +23,12 @@ def global_comparison(write_to_file=False):
 
 
 def find_most_similar(score):
-    db = json.load(open("db/handles/english-users.json"))
+    db = json.load(open("db/handles/top50handles.json"))
 
     max_score = 0
     max_handle = ""
 
-    for handle, handle_values in zip(list(db.keys()), list(db.values())):
+    for handle, handle_values in db.items():
         similarity_score = similarity_measure.difference(score, handle_values['scores'])
         if similarity_score > max_score:
             max_score = similarity_score

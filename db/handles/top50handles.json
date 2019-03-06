@@ -1,0 +1,542 @@
+{
+    "@BarackObama": {
+        "scores": {
+            "Personable": 60,
+            "Arrogant/Distant": 52,
+            "Depressed": 42,
+            "Sensory": 40,
+            "Analytic": 62,
+            "Angry": 36,
+            "Plugged In": 52,
+            "Spacy/Valley girl": 56,
+            "Worried": 26,
+            "Upbeat": 89,
+            "In-the-moment": 32
+        }
+    },
+    "@ArianaGrande": {
+        "scores": {
+            "Personable": 62,
+            "Arrogant/Distant": 46,
+            "Depressed": 36,
+            "Sensory": 57,
+            "Analytic": 62,
+            "Angry": 40,
+            "Plugged In": 62,
+            "Spacy/Valley girl": 72,
+            "Worried": 39,
+            "Upbeat": 79,
+            "In-the-moment": 69
+        }
+    },
+    "@SrBachchan": {
+        "scores": {
+            "Personable": 14,
+            "Arrogant/Distant": 22,
+            "Depressed": 45,
+            "Sensory": 20,
+            "Analytic": 21,
+            "Angry": 24,
+            "Plugged In": 30,
+            "Spacy/Valley girl": 37,
+            "Worried": 33,
+            "Upbeat": 29,
+            "In-the-moment": 38
+        }
+    },
+    "@katyperry": {
+        "scores": {
+            "Personable": 68,
+            "Arrogant/Distant": 44,
+            "Depressed": 53,
+            "Sensory": 71,
+            "Analytic": 63,
+            "Angry": 52,
+            "Plugged In": 56,
+            "Spacy/Valley girl": 50,
+            "Worried": 58,
+            "Upbeat": 60,
+            "In-the-moment": 58
+        }
+    },
+    "@Oprah": {
+        "scores": {
+            "Personable": 63,
+            "Arrogant/Distant": 45,
+            "Depressed": 51,
+            "Sensory": 76,
+            "Analytic": 70,
+            "Angry": 50,
+            "Plugged In": 66,
+            "Spacy/Valley girl": 52,
+            "Worried": 50,
+            "Upbeat": 71,
+            "In-the-moment": 49
+        }
+    },
+    "@TheEllenShow": {
+        "scores": {
+            "Personable": 69,
+            "Arrogant/Distant": 38,
+            "Depressed": 50,
+            "Sensory": 41,
+            "Analytic": 61,
+            "Angry": 38,
+            "Plugged In": 62,
+            "Spacy/Valley girl": 57,
+            "Worried": 52,
+            "Upbeat": 74,
+            "In-the-moment": 53
+        }
+    },
+    "@shakira": {
+        "scores": {
+            "Personable": 24,
+            "Arrogant/Distant": 35,
+            "Depressed": 43,
+            "Sensory": 34,
+            "Analytic": 21,
+            "Angry": 26,
+            "Plugged In": 27,
+            "Spacy/Valley girl": 49,
+            "Worried": 64,
+            "Upbeat": 41,
+            "In-the-moment": 36
+        }
+    },
+    "@KimKardashian": {
+        "scores": {
+            "Personable": 51,
+            "Arrogant/Distant": 32,
+            "Depressed": 52,
+            "Sensory": 62,
+            "Analytic": 35,
+            "Angry": 33,
+            "Plugged In": 46,
+            "Spacy/Valley girl": 60,
+            "Worried": 39,
+            "Upbeat": 45,
+            "In-the-moment": 48
+        }
+    },
+    "@Drake": {
+        "scores": {
+            "Personable": 18,
+            "Arrogant/Distant": 46,
+            "Depressed": 31,
+            "Sensory": 27,
+            "Analytic": 16,
+            "Angry": 28,
+            "Plugged In": 27,
+            "Spacy/Valley girl": 42,
+            "Worried": 51,
+            "Upbeat": 36,
+            "In-the-moment": 37
+        }
+    },
+    "@Cristiano": {
+        "scores": {
+            "Personable": 24,
+            "Arrogant/Distant": 29,
+            "Depressed": 37,
+            "Sensory": 24,
+            "Analytic": 16,
+            "Angry": 23,
+            "Plugged In": 24,
+            "Spacy/Valley girl": 65,
+            "Worried": 25,
+            "Upbeat": 39,
+            "In-the-moment": 48
+        }
+    },
+    "@jimmyfallon": {
+        "scores": {
+            "Personable": 45,
+            "Arrogant/Distant": 59,
+            "Depressed": 44,
+            "Sensory": 48,
+            "Analytic": 34,
+            "Angry": 30,
+            "Plugged In": 57,
+            "Spacy/Valley girl": 50,
+            "Worried": 33,
+            "Upbeat": 57,
+            "In-the-moment": 30
+        }
+    },
+    "@MileyCyrus": {
+        "scores": {
+            "Personable": 41,
+            "Arrogant/Distant": 22,
+            "Depressed": 50,
+            "Sensory": 37,
+            "Analytic": 34,
+            "Angry": 70,
+            "Plugged In": 63,
+            "Spacy/Valley girl": 62,
+            "Worried": 21,
+            "Upbeat": 51,
+            "In-the-moment": 51
+        }
+    },
+    "@KevinHart4real": {
+        "scores": {
+            "Personable": 56,
+            "Arrogant/Distant": 46,
+            "Depressed": 40,
+            "Sensory": 68,
+            "Analytic": 63,
+            "Angry": 54,
+            "Plugged In": 56,
+            "Spacy/Valley girl": 76,
+            "Worried": 38,
+            "Upbeat": 65,
+            "In-the-moment": 55
+        }
+    },
+    "@NASA": {
+        "scores": {
+            "Personable": 23,
+            "Arrogant/Distant": 65,
+            "Depressed": 44,
+            "Sensory": 47,
+            "Analytic": 23,
+            "Angry": 23,
+            "Plugged In": 46,
+            "Spacy/Valley girl": 45,
+            "Worried": 31,
+            "Upbeat": 40,
+            "In-the-moment": 15
+        }
+    },
+    "@justinbieber": {
+        "scores": {
+            "Personable": 48,
+            "Arrogant/Distant": 38,
+            "Depressed": 49,
+            "Sensory": 51,
+            "Analytic": 39,
+            "Angry": 40,
+            "Plugged In": 46,
+            "Spacy/Valley girl": 60,
+            "Worried": 36,
+            "Upbeat": 60,
+            "In-the-moment": 57
+        }
+    },
+    "@NiallOfficial": {
+        "scores": {
+            "Personable": 50,
+            "Arrogant/Distant": 58,
+            "Depressed": 29,
+            "Sensory": 94,
+            "Analytic": 47,
+            "Angry": 51,
+            "Plugged In": 72,
+            "Spacy/Valley girl": 50,
+            "Worried": 34,
+            "Upbeat": 69,
+            "In-the-moment": 40
+        }
+    },
+    "@neymarjr": {
+        "scores": {
+            "Personable": 18,
+            "Arrogant/Distant": 28,
+            "Depressed": 50,
+            "Sensory": 22,
+            "Analytic": 16,
+            "Angry": 19,
+            "Plugged In": 39,
+            "Spacy/Valley girl": 48,
+            "Worried": 37,
+            "Upbeat": 25,
+            "In-the-moment": 41
+        }
+    },
+    "@JLo": {
+        "scores": {
+            "Personable": 53,
+            "Arrogant/Distant": 66,
+            "Depressed": 45,
+            "Sensory": 66,
+            "Analytic": 48,
+            "Angry": 39,
+            "Plugged In": 71,
+            "Spacy/Valley girl": 53,
+            "Worried": 78,
+            "Upbeat": 55,
+            "In-the-moment": 52
+        }
+    },
+    "@KingJames": {
+        "scores": {
+            "Personable": 63,
+            "Arrogant/Distant": 44,
+            "Depressed": 30,
+            "Sensory": 33,
+            "Analytic": 49,
+            "Angry": 35,
+            "Plugged In": 62,
+            "Spacy/Valley girl": 46,
+            "Worried": 61,
+            "Upbeat": 88,
+            "In-the-moment": 41
+        }
+    },
+    "@realDonaldTrump": {
+        "scores": {
+            "Personable": 48,
+            "Arrogant/Distant": 61,
+            "Depressed": 48,
+            "Sensory": 34,
+            "Analytic": 64,
+            "Angry": 46,
+            "Plugged In": 38,
+            "Spacy/Valley girl": 51,
+            "Worried": 30,
+            "Upbeat": 66,
+            "In-the-moment": 39
+        }
+    },
+    "@Louis_Tomlinson": {
+        "scores": {
+            "Personable": 83,
+            "Arrogant/Distant": 50,
+            "Depressed": 15,
+            "Sensory": 49,
+            "Analytic": 76,
+            "Angry": 67,
+            "Plugged In": 60,
+            "Spacy/Valley girl": 61,
+            "Worried": 73,
+            "Upbeat": 86,
+            "In-the-moment": 61
+        }
+    },
+    "@Pink": {
+        "scores": {
+            "Personable": 55,
+            "Arrogant/Distant": 15,
+            "Depressed": 70,
+            "Sensory": 51,
+            "Analytic": 41,
+            "Angry": 43,
+            "Plugged In": 42,
+            "Spacy/Valley girl": 61,
+            "Worried": 35,
+            "Upbeat": 60,
+            "In-the-moment": 61
+        }
+    },
+    "@jtimberlake": {
+        "scores": {
+            "Personable": 47,
+            "Arrogant/Distant": 36,
+            "Depressed": 40,
+            "Sensory": 39,
+            "Analytic": 34,
+            "Angry": 40,
+            "Plugged In": 54,
+            "Spacy/Valley girl": 64,
+            "Worried": 34,
+            "Upbeat": 62,
+            "In-the-moment": 58
+        }
+    },
+    "@taylorswift13": {
+        "scores": {
+            "Personable": 28,
+            "Arrogant/Distant": 46,
+            "Depressed": 33,
+            "Sensory": 48,
+            "Analytic": 22,
+            "Angry": 23,
+            "Plugged In": 35,
+            "Spacy/Valley girl": 46,
+            "Worried": 33,
+            "Upbeat": 36,
+            "In-the-moment": 45
+        }
+    },
+    "@LiamPayne": {
+        "scores": {
+            "Personable": 61,
+            "Arrogant/Distant": 46,
+            "Depressed": 25,
+            "Sensory": 28,
+            "Analytic": 41,
+            "Angry": 52,
+            "Plugged In": 67,
+            "Spacy/Valley girl": 58,
+            "Worried": 30,
+            "Upbeat": 96,
+            "In-the-moment": 52
+        }
+    },
+    "@BrunoMars": {
+        "scores": {
+            "Personable": 49,
+            "Arrogant/Distant": 38,
+            "Depressed": 44,
+            "Sensory": 73,
+            "Analytic": 35,
+            "Angry": 65,
+            "Plugged In": 58,
+            "Spacy/Valley girl": 59,
+            "Worried": 56,
+            "Upbeat": 64,
+            "In-the-moment": 58
+        }
+    },
+    "@selenagomez": {
+        "scores": {
+            "Personable": 29,
+            "Arrogant/Distant": 50,
+            "Depressed": 49,
+            "Sensory": 49,
+            "Analytic": 28,
+            "Angry": 29,
+            "Plugged In": 45,
+            "Spacy/Valley girl": 63,
+            "Worried": 43,
+            "Upbeat": 21,
+            "In-the-moment": 44
+        }
+    },
+    "@rihanna": {
+        "scores": {
+            "Personable": 43,
+            "Arrogant/Distant": 35,
+            "Depressed": 41,
+            "Sensory": 38,
+            "Analytic": 49,
+            "Angry": 78,
+            "Plugged In": 42,
+            "Spacy/Valley girl": 59,
+            "Worried": 25,
+            "Upbeat": 58,
+            "In-the-moment": 40
+        }
+    },
+    "@ladygaga": {
+        "scores": {
+            "Personable": 43,
+            "Arrogant/Distant": 33,
+            "Depressed": 29,
+            "Sensory": 57,
+            "Analytic": 34,
+            "Angry": 29,
+            "Plugged In": 45,
+            "Spacy/Valley girl": 54,
+            "Worried": 28,
+            "Upbeat": 87,
+            "In-the-moment": 44
+        }
+    },
+    "@iamsrk": {
+        "scores": {
+            "Personable": 48,
+            "Arrogant/Distant": 36,
+            "Depressed": 17,
+            "Sensory": 67,
+            "Analytic": 41,
+            "Angry": 26,
+            "Plugged In": 43,
+            "Spacy/Valley girl": 64,
+            "Worried": 23,
+            "Upbeat": 85,
+            "In-the-moment": 50
+        }
+    },
+    "@wizkhalifa": {
+        "scores": {
+            "Personable": 34,
+            "Arrogant/Distant": 53,
+            "Depressed": 48,
+            "Sensory": 40,
+            "Analytic": 38,
+            "Angry": 49,
+            "Plugged In": 57,
+            "Spacy/Valley girl": 49,
+            "Worried": 31,
+            "Upbeat": 31,
+            "In-the-moment": 49
+        }
+    },
+    "@LilTunechi": {
+        "scores": {
+            "Personable": 34,
+            "Arrogant/Distant": 36,
+            "Depressed": 44,
+            "Sensory": 51,
+            "Analytic": 25,
+            "Angry": 54,
+            "Plugged In": 45,
+            "Spacy/Valley girl": 57,
+            "Worried": 67,
+            "Upbeat": 55,
+            "In-the-moment": 40
+        }
+    },
+    "@aliciakeys": {
+        "scores": {
+            "Personable": 60,
+            "Arrogant/Distant": 27,
+            "Depressed": 36,
+            "Sensory": 71,
+            "Analytic": 49,
+            "Angry": 45,
+            "Plugged In": 57,
+            "Spacy/Valley girl": 70,
+            "Worried": 33,
+            "Upbeat": 76,
+            "In-the-moment": 56
+        }
+    },
+    "@BillGates": {
+        "scores": {
+            "Personable": 70,
+            "Arrogant/Distant": 43,
+            "Depressed": 39,
+            "Sensory": 27,
+            "Analytic": 69,
+            "Angry": 34,
+            "Plugged In": 43,
+            "Spacy/Valley girl": 63,
+            "Worried": 49,
+            "Upbeat": 81,
+            "In-the-moment": 55
+        }
+    },
+    "@britneyspears": {
+        "scores": {
+            "Personable": 56,
+            "Arrogant/Distant": 43,
+            "Depressed": 54,
+            "Sensory": 52,
+            "Analytic": 56,
+            "Angry": 51,
+            "Plugged In": 45,
+            "Spacy/Valley girl": 71,
+            "Worried": 26,
+            "Upbeat": 51,
+            "In-the-moment": 48
+        }
+    },
+    "@Harry_Styles": {
+        "scores": {
+            "Personable": 68,
+            "Arrogant/Distant": 32,
+            "Depressed": 15,
+            "Sensory": 42,
+            "Analytic": 32,
+            "Angry": 67,
+            "Plugged In": 48,
+            "Spacy/Valley girl": 53,
+            "Worried": 24,
+            "Upbeat": 96,
+            "In-the-moment": 42
+        }
+    }
+}
