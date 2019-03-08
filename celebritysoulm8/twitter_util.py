@@ -30,22 +30,19 @@ def get_url_image_of_user(handle):
     t = twitter.Api(*auth_twitter())
     user = t.UsersLookup(screen_name=handle)
     print(user[0].profile_image_url.replace("_normal", ""))
-    # pprint.pprint(user)
     return user[0].profile_image_url.replace("_normal", "")
-
-    # return str(user[0]['profile_image_url'])[:-11] + str(user[0]['profile_image_url'])[-4:]
 
 
 def delete_all_tweets():
 
-    twitter = Twitter(auth=auth_twitter())
-    timeline = twitter.statuses.home_timeline()
+    t = twitter.Api(*auth_twitter())
+    timeline = t.GetUserTimeline(screen_name='celebritysoulm8')
     print((len(timeline)))
 
     for tweet in timeline:
-        print((tweet['id']))
-        print(("Destroying: ", tweet['text']))
-        twitter.statuses.destroy(id=tweet['id'])
+
+        print("Destroying: ", tweet.text)
+        t.DestroyStatus(t.id)
 
 
 def auth_twitter():
@@ -57,9 +54,7 @@ def auth_twitter():
         "keys/access-token-secret.txt").read().strip()
 
     return consumer_key, consumer_secret, access_token, access_token_secret
-    # return OAuth(access_token, access_token_secret, consumer_key, consumer_secret)
 
 
 if __name__ == "__main__":
-    #  delete_all_tweets()
     pass
