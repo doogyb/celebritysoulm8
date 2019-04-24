@@ -4,3 +4,4 @@ keys/*
 log/
 img/*
 *.bak
+c_env/
