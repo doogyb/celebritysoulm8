@@ -4,3 +4,5 @@ keys/*
 log/
 img/*
 *.bak
+/dist/
+/*.egg-info
