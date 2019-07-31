@@ -1,8 +1,9 @@
-keys/*
-.idea/*
+keys
+.idea
 *.pyc
-log/
-img/*
+log
+img
 *.bak
-/dist/
-c_env/
+/dist
+c_env
+sync.sh
