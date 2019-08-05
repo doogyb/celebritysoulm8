@@ -1,9 +1,8 @@
-import traceback
-
 from celebritysoulm8 import twitterbot
-from celebritysoulm8.twitter_util import *
-from celebritysoulm8.mail import send_email
+from celebritysoulm8.mail import send_crash_email
 from requests.exceptions import ChunkedEncodingError
+
+chunk = 0
 
 try:
     twitterbot.listen()
