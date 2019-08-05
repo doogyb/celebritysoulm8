@@ -14,12 +14,11 @@ import twitter
 class TwitterBot:
 
     def __init__(self):
-        self.t = twitter.Api(*auth_twitter)
+        self.t = twitter.Api(*auth_twitter())
 
     def listen(self):
 
-        t = twitter.Api(*auth_twitter())
-        for msg in t.GetStzreamFilter(follow=["773917260050272258"]):
+        for msg in self.t.GetStreamFilter(follow=["773917260050272258"]):
 
             if 'entities' not in msg:
                 continue
@@ -54,9 +53,8 @@ class TwitterBot:
 
         reply_content = "@" + handle + " you have matched with: " + user_match
         profile_img = self.download_user_image(user_match[1:])
-        t = twitter.Api(*auth_twitter())
 
-        t.PostUpdate(reply_content, media=open(profile_img, 'rb'))
+        self.t.PostUpdate(reply_content, media=open(profile_img, 'rb'))
 
     def reply_with_user_rating(self, msg):
 

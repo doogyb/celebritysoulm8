@@ -1,10 +1,11 @@
-from celebritysoulm8 import twitterbot
+from celebritysoulm8.twitterbot import TwitterBot
 from celebritysoulm8.mail import send_crash_email
 from requests.exceptions import ChunkedEncodingError
 
 chunk = 0
 
 try:
+    twitterbot = TwitterBot()
     twitterbot.listen()
 
 except ChunkedEncodingError as e:
