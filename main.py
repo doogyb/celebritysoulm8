@@ -4,16 +4,17 @@ from requests.exceptions import ChunkedEncodingError
 
 chunk = 0
 
-try:
-    twitterbot = TwitterBot()
-    twitterbot.listen()
+while True:
+    try:
+        twitterbot = TwitterBot()
+        twitterbot.listen()
 
-except ChunkedEncodingError as e:
-    chunk += 1
-    send_crash_email(e)
-    if chunk == 3:
+    except ChunkedEncodingError as e:
+        chunk += 1
+        send_crash_email(e, chunk)
+        if chunk == 3:
+            raise
+
+    except Exception as e:
+        send_crash_email(e)
         raise
-
-except Exception as e:
-    send_crash_email(e)
-    raise

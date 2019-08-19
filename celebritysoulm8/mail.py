@@ -25,11 +25,12 @@ def send_email(user, pwd, recipient, subject, body):
         raise
 
 
-def send_crash_email(e):
+def send_crash_email(e, chunk):
     with open("keys/mail.txt") as f:
         password = f.read().strip()
 
-    email_contents = traceback.format_exc()
+    email_contents = ("CHUNK: " + str(chunk) + "\n\n\n")
+    email_contents += traceback.format_exc()
     send_email("notifier.samuel.doogan@gmail.com", password,
                "samueldoogan@gmail.com", "celebritysoulm8 crash",
                email_contents)
