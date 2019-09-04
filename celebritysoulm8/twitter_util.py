@@ -29,7 +29,6 @@ def get_url_image_of_user(handle):
 
     t = twitter.Api(*auth_twitter())
     user = t.UsersLookup(screen_name=handle)
-    print(user[0].profile_image_url.replace("_normal", ""))
     return user[0].profile_image_url.replace("_normal", "")
 
 
