@@ -10,13 +10,12 @@ you might like, as described in the examples below.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+...
 
 ## Built With
 
-* [Analyze Words](https://analyzewords.com/) - The web framework used
-* [python-twitter](https://github.com/bear/python-twitter) - Dependency Management
-
+* [Analyze Words](https://analyzewords.com/) - The sentiment analysis engine.
+* [python-twitter](https://github.com/bear/python-twitter) - The python Twitter API.
 ## Acknowledgments
 
 I'd like to thank my supervisor Tony Veale for the inspiration for this work.
