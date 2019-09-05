@@ -13,15 +13,17 @@ you might like, as described in the examples below.
 The bot is interacted with on Twitter, using the hashtag #matchme (case insensitive).
 So long as you tweet at the bot with this hashtag, it will reply with your celebrity
 match:
-<html>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/celebritysoulm8?ref_src=twsrc%5Etfw">@celebritysoulm8</a> <a href="https://twitter.com/hashtag/matchme?src=hash&amp;ref_src=twsrc%5Etfw">#matchme</a> here&#39;s hoping...</p>&mdash; S Doogy (@celebritysoulm8) <a href="https://twitter.com/celebritysoulm8/status/1169626725216600065?ref_src=twsrc%5Etfw">September 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</html>
 
+https://twitter.com/celebritysoulm8/status/1169626725216600065?s=20
+
+You can also ask the bot to match you with anyone else (regardless of celebrity status)
+using the tweet #matchus.
 
 ## Built With
 
 * [Analyze Words](https://analyzewords.com/) - The sentiment analysis engine.
 * [python-twitter](https://github.com/bear/python-twitter) - The python Twitter API.
+
 ## Acknowledgments
 
 I'd like to thank my supervisor Tony Veale for the inspiration for this work.

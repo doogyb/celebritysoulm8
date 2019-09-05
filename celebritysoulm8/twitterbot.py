@@ -1,4 +1,4 @@
-from pprint import pprint
+from `pprint` import pprint
 from datetime import datetime
 from . import analyse_words
 from . import cross_comparison
@@ -108,7 +108,7 @@ class TwitterBot:
                 log_text += "\nImage uploaded: " + profile_img
             log_text += "\n\n---------------------------------------------\n\n"
 
-            pprint.pprint(msg)
+            pprint(msg)
 
             with open("log/log.txt", 'a') as logfile:
                 logfile.write("\n\n" + log_text)
