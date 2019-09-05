@@ -8,9 +8,13 @@ representation of your language on Twitter. It then compares this vector
 to other users using cosine similarity evaluation. You can also compare anyone
 you might like, as described in the examples below.
 
-## Getting Started
+## How to use
 
-...
+The bot is interacted with on Twitter, using the hashtag #matchme (case insensitive).
+So long as you tweet at the bot with this hashtag, it will reply with your celebrity
+match:
+
+
 
 ## Built With
 

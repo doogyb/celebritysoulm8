@@ -1,8 +1,7 @@
-from twitter import *
+from twitter import Twitter
 import time
 import os
 import twitter
-import pprint
 
 
 def wait_time(call):
