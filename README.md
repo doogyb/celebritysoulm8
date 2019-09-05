@@ -8,7 +8,8 @@ representation of your language on Twitter. It then compares this vector
 to other users using cosine similarity evaluation. You can also compare anyone
 you might like, as described in the examples below.
 
-The bot's handle is @celebritysoulm8 and here is it's [Twitter Profile](https://twitter.com/celebritysoulm8).
+The bot's handle is @celebritysoulm8 and here is where you can find its
+[Twitter Profile](https://twitter.com/celebritysoulm8).
 
 ## How to use
 
