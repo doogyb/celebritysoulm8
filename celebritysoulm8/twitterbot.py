@@ -55,7 +55,7 @@ class TwitterBot:
         profile_img = self.download_user_image(user_match[1:])
 
         self.t.PostUpdate(reply_content, media=open(
-            profile_img, 'rb'), in_reply_to_status_id=msg[id])
+            profile_img, 'rb'), in_reply_to_status_id=msg["id"])
 
     def reply_with_user_rating(self, msg):
 
