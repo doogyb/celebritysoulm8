@@ -16,5 +16,5 @@ while True:
             raise
 
     except Exception as e:
-        send_crash_email(e)
+        send_crash_email(e, "empty chunk")
         raise
