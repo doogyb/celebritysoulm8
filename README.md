@@ -16,8 +16,13 @@ match:
 
 https://twitter.com/celebritysoulm8/status/1169626725216600065?s=20
 
-You can also ask the bot to match you with anyone else (regardless of celebrity status)
-using the tweet #matchus.
+This bot matched with Pink... Go figure.
+
+You can also ask the bot to rate the similarity of your twitter language usage
+with anyone else (regardless of celebrity status) using the tweet #rateus and
+the person you which to compare yourself to:
+
+https://twitter.com/celebritysoulm8/status/1169632588258058240?s=20
 
 ## Built With
 
