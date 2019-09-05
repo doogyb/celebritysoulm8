@@ -8,6 +8,8 @@ representation of your language on Twitter. It then compares this vector
 to other users using cosine similarity evaluation. You can also compare anyone
 you might like, as described in the examples below.
 
+The bot's handle is @celebritysoulm8 and here is it's [Twitter Profile](https://twitter.com/celebritysoulm8).
+
 ## How to use
 
 The bot is interacted with on Twitter, using the hashtag #matchme (case insensitive).
@@ -29,7 +31,7 @@ https://twitter.com/celebritysoulm8/status/1169632588258058240?s=20
 * [Analyze Words](https://analyzewords.com/) - The sentiment analysis engine.
 * [python-twitter](https://github.com/bear/python-twitter) - The python Twitter API.
 
-## Acknowledgments
+## Acknowledgements
 
 I'd like to thank my supervisor Tony Veale for the inspiration for this work.
 His website can be found [here](http://afflatus.ucd.ie/), and his book, which
