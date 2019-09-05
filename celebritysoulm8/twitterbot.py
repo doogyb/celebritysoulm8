@@ -1,4 +1,4 @@
-from `pprint` import pprint
+from pprint import pprint
 from datetime import datetime
 from . import analyse_words
 from . import cross_comparison
