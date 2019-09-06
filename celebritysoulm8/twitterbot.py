@@ -116,7 +116,7 @@ class TwitterBot:
             print("Can't do it captain!")
 
     @staticmethod
-    def log_err(twitter_error, reply_content):
+    def log_err(twitter_error, reply_content="no reply"):
 
         print(twitter_error)
         err_str = "----------------------------------------------------\n\n"
