@@ -54,7 +54,8 @@ class TwitterBot:
         reply_content = "@" + handle + " you have matched with: " + user_match
         profile_img = self.download_user_image(user_match[1:])
 
-        self.t.PostUpdate(reply_content, media=open(profile_img, 'rb'))
+        self.t.PostUpdate(reply_content, media=open(
+            profile_img, 'rb'), in_reply_to_status_id=msg["id"])
 
     def reply_with_user_rating(self, msg):
 
@@ -107,7 +108,7 @@ class TwitterBot:
                 log_text += "\nImage uploaded: " + profile_img
             log_text += "\n\n---------------------------------------------\n\n"
 
-            pprint.pprint(msg)
+            pprint(msg)
 
             with open("log/log.txt", 'a') as logfile:
                 logfile.write("\n\n" + log_text)
