@@ -2,18 +2,17 @@ from celebritysoulm8.twitterbot import TwitterBot
 from celebritysoulm8.mail import send_crash_email
 from requests.exceptions import ChunkedEncodingError
 
-chunk = 0
+chunking_errors = 0
+twitterbot = TwitterBot()
+
 
 while True:
     try:
-        twitterbot = TwitterBot()
         twitterbot.listen()
 
     except ChunkedEncodingError as e:
-        chunk += 1
-        send_crash_email(e, chunk)
-        if chunk == 3:
-            raise
+        chunking_errors += 1
+        twitterbot.log_err(e)
 
     except Exception as e:
         send_crash_email(e, "empty chunk")
