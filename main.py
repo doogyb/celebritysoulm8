@@ -15,5 +15,5 @@ while True:
         twitterbot.log_err(e)
 
     except Exception as e:
-        send_crash_email(e, "empty chunk")
+        send_crash_email(e)
         raise
