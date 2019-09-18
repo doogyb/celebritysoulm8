@@ -1,4 +1,5 @@
 import twitter
+import os
 
 
 def get_url_image_of_user(handle):
@@ -22,10 +23,10 @@ def delete_all_tweets():
 
 def auth_twitter():
 
-    consumer_key = open("keys/consumer-key.txt").read().strip()
-    consumer_secret = open("keys/consumer-secret.txt").read().strip()
-    access_token = open("keys/access-token.txt").read().strip()
-    access_token_secret = open("keys/access-secret.txt").read().strip()
+    consumer_key = os.environ['CELEBRITYSOULM8_CONSUMER']
+    consumer_secret = os.environ['CELEBRITYSOULM8_CONSUMER_SECRET']
+    access_token = os.environ['CELEBRITYSOULM8_ACCESS']
+    access_token_secret = os.environ['CELEBRITYSOULM8_ACCESS_SECRET']
 
     return consumer_key, consumer_secret, access_token, access_token_secret
 

@@ -1,5 +1,6 @@
 import smtplib
 import traceback
+import os
 
 
 def send_email(user, pwd, recipient, subject, body):
@@ -26,8 +27,8 @@ def send_email(user, pwd, recipient, subject, body):
 
 
 def send_crash_email(e):
-    with open("keys/mail.txt") as f:
-        password = f.read().strip()
+
+    password = os.environ['CELEBRITYSOULM8_MAIL']
 
     email_contents = traceback.format_exc()
     send_email("notifier.samuel.doogan@gmail.com", password,
