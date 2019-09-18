@@ -18,7 +18,7 @@ class TwitterBot:
 
     def listen(self):
 
-        for msg in self.t.GetStreamFilter(follow=["773917260050272258"]):
+        for msg in self.t.GetStreamFilter(track=["@celebritysoulm8"]):
 
             if 'entities' not in msg:
                 continue
