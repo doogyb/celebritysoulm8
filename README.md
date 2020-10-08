@@ -13,7 +13,7 @@ The bot's handle is @celebritysoulm8 and here is where you can find its
 
 ## How to use
 
-The bot is interacted with on Twitter, using the hashtag #matchme (case insensitive).
+The bot is interacted with on Twitter, using the hashtag `#matchme` (case insensitive).
 So long as you tweet at the bot with this hashtag, it will reply with your celebrity
 match:
 
@@ -22,7 +22,7 @@ https://twitter.com/celebritysoulm8/status/1169626725216600065?s=20
 This bot matched with Pink... Go figure.
 
 You can also ask the bot to rate the similarity of your twitter language usage
-with anyone else (regardless of celebrity status) using the tweet #rateus and
+with anyone else (regardless of celebrity status) using the tweet `#rateus` and
 the person you which to compare yourself to:
 
 https://twitter.com/celebritysoulm8/status/1169632588258058240?s=20
