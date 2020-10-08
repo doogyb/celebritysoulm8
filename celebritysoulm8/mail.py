@@ -34,3 +34,10 @@ def send_crash_email(e):
     send_email("notifier.samuel.doogan@gmail.com", password,
                "samueldoogan@gmail.com", "celebritysoulm8 crash",
                email_contents)
+
+
+if __name__ == "__main__":
+    password = os.environ['CELEBRITYSOULM8_MAIL']
+    send_email("notifier.samuel.doogan@gmail.com", password,
+    "samueldoogan@gmail.com", "This is a test",
+    "This is the body of the test  ")
