@@ -1,13 +1,13 @@
 from pprint import pprint
 from datetime import datetime
-from . import analyse_words
-from . import cross_comparison
-from .twitter_util import auth_twitter, get_url_image_of_user
+from celebritysoulm8 import analyse_words
+from celebritysoulm8 import cross_comparison
+from celebritysoulm8.twitter_util import auth_twitter, get_url_image_of_user
+from celebritysoulm8 import similarity_measure
 import urllib.request
 import urllib.parse
 import urllib.error
 import os.path
-from . import similarity_measure
 import twitter
 
 

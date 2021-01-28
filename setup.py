@@ -7,4 +7,9 @@ setup(name='celebritysoulm8',
       author='Samuel Doogan',
       author_email='samueldoogan@gmail.com',
       packages=['celebritysoulm8'],
+      entry_points={
+            "console_scripts": [
+                  "celebritysoulm8=celebritysoulm8.main:main",
+            ],
+      },
       zip_safe=False)
