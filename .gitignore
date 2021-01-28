@@ -7,3 +7,4 @@ img
 /dist
 c_env
 sync.sh
+venv/
