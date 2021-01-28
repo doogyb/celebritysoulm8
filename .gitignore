@@ -8,3 +8,4 @@ img
 c_env
 sync.sh
 venv/
+*.egg*
